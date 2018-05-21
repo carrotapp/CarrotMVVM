@@ -2,7 +2,7 @@
 <xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>2018/05/21 10:44:26 AM</xs:documentation>
+    <xs:documentation>2018/05/21 01:22:18 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="MvxDropDownItemTemplate">
     <xs:annotation>
@@ -12,6 +12,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/api_key" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
             <xs:enumeration value="@string/common_google_play_services_enable_text" />
@@ -69,6 +70,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/api_key" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
             <xs:enumeration value="@string/common_google_play_services_enable_text" />
@@ -126,6 +128,7 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@string/api_key" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
             <xs:enumeration value="@string/common_google_play_services_enable_text" />
@@ -1128,6 +1131,7 @@
             <xs:enumeration value="@drawable/notification_template_icon_low_bg" />
             <xs:enumeration value="@drawable/notification_tile_bg" />
             <xs:enumeration value="@drawable/notify_panel_notification_icon_bg" />
+            <xs:enumeration value="@string/api_key" />
             <xs:enumeration value="@string/app_name" />
             <xs:enumeration value="@string/common_google_play_services_enable_button" />
             <xs:enumeration value="@string/common_google_play_services_enable_text" />

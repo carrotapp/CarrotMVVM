@@ -2,10 +2,11 @@
 using MvvmCross.Plugin.Messenger;
 using Carrot.Core.Models.DTO;
 using Carrot.Core.Services.LocationService;
+using System.Diagnostics;
 
 namespace Carrot.Core.ViewModels
 {
-    public class MapViewModel: MvxViewModel
+    public class MapViewModel : MvxViewModel
     {
         private readonly MvxSubscriptionToken _token;
 
@@ -21,6 +22,12 @@ namespace Carrot.Core.ViewModels
             set => SetProperty(ref _lat, value);
         }
 
+        private Location _userLocation;
+        public Location UserLocation {
+            get => _userLocation;
+            set => SetProperty(ref _userLocation, value);
+        }
+
         public MapViewModel(ILocationService locationService, IMvxMessenger messenger)
         {
             _token = messenger.Subscribe<LocationMessage>(OnLocationMessage);
@@ -30,6 +37,7 @@ namespace Carrot.Core.ViewModels
         {
             Lat = locationMessage.Latitude;
             Lng = locationMessage.Longitude;
+            UserLocation = new Location(Lat, Lng);
         }
     }
 }

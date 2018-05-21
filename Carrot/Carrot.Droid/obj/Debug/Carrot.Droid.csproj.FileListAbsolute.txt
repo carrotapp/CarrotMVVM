@@ -36,6 +36,10 @@ C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\uplo
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\Carrot.Droid.Carrot.Droid.apk
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\Carrot.Droid.Carrot.Droid-Signed.apk
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\bin\Carrot.Droid.Carrot.Droid.apk
+C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\MvvmCross.Plugin.Location.dll
+C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\MvvmCross.Plugin.Location.xml
+C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\MvvmCross.Plugin.Messenger.dll
+C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\MvvmCross.Plugin.Messenger.xml
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\Mono.Android.pdb
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\Mono.Android.Export.pdb
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\mscorlib.pdb
@@ -98,9 +102,5 @@ C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\andr
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\System.Web.Services.pdb
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\System.Xml.Linq.pdb
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\System.Xml.pdb
-C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\MvvmCross.Plugin.Location.dll
-C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\MvvmCross.Plugin.Location.xml
-C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\MvvmCross.Plugin.Messenger.dll
-C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\MvvmCross.Plugin.Messenger.xml
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\bin\Debug\Carrot.Droid.dll
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\linksrc\Carrot.Droid.dll.mdb

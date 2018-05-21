@@ -693,6 +693,9 @@ namespace Carrot.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f050013
+			public const int api_key = 2131034131;
+			
 			// aapt resource value: 0x7f050012
 			public const int app_name = 2131034130;
 			

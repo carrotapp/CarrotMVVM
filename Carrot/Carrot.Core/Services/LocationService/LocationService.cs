@@ -17,7 +17,7 @@ namespace Carrot.Core.Services.LocationService
             _messenger = messenger;
             MvxLocationOptions options = new MvxLocationOptions
             {
-                TimeBetweenUpdates = TimeSpan.FromMinutes(1)
+                TimeBetweenUpdates = TimeSpan.FromSeconds(20)
             };
             watcher.Start(options, OnLocation, OnError);
         }

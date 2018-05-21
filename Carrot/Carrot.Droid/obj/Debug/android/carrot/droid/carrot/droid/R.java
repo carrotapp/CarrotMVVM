@@ -538,6 +538,7 @@ containing a value of this type.
         public static final int notification_template_part_time=0x7f03000f;
     }
     public static final class string {
+        public static final int api_key=0x7f050013;
         public static final int app_name=0x7f050012;
         public static final int common_google_play_services_enable_button=0x7f050001;
         public static final int common_google_play_services_enable_text=0x7f050002;

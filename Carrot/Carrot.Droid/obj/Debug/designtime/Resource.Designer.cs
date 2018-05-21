@@ -1852,6 +1852,9 @@ namespace Carrot.Droid
 		{
 			
 			// aapt resource value: 0
+			public static int api_key = 0;
+			
+			// aapt resource value: 0
 			public static int app_name = 0;
 			
 			// aapt resource value: 1

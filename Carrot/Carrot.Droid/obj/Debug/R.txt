@@ -178,6 +178,7 @@ int layout notification_template_media 0x7f03000c
 int layout notification_template_media_custom 0x7f03000d
 int layout notification_template_part_chronometer 0x7f03000e
 int layout notification_template_part_time 0x7f03000f
+int string api_key 0x7f050013
 int string app_name 0x7f050012
 int string common_google_play_services_enable_button 0x7f050001
 int string common_google_play_services_enable_text 0x7f050002

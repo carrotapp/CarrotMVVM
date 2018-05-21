@@ -3,6 +3,7 @@ using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using Android.OS;
 using Carrot.Core.ViewModels;
+using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Views;
 
 namespace Carrot.Droid.Views
@@ -12,6 +13,7 @@ namespace Carrot.Droid.Views
     {
         private MapFragment _mapFragment;
         private GoogleMap _map;
+        private Marker _userLocation;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -39,17 +41,14 @@ namespace Carrot.Droid.Views
         {
             _map = googleMap;
 
-            CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
-            builder.Target(new LatLng(ViewModel.Lat, ViewModel.Lng));
-            builder.Zoom(18);
-            CameraPosition cameraPosition = builder.Build();
-            CameraUpdate cameraUpdate = CameraUpdateFactory.NewCameraPosition(cameraPosition);
-
-            _map.MoveCamera(cameraUpdate);
             var options = new MarkerOptions();
             options.SetPosition(new LatLng(ViewModel.Lat, ViewModel.Lng));
             options.SetTitle("My location");
-            Marker marker = _map.AddMarker(options);
+            _userLocation = _map.AddMarker(options);
+
+            var set = this.CreateBindingSet<ExploreView, MapViewModel>();
+            set.Bind(_userLocation).For(m => m.Position).To(vm => vm.UserLocation).WithConversion(new LocationToLatLngValueConverter(), null);
+            set.Apply();
         }
     }
 }
