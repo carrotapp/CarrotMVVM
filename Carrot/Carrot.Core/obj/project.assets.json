@@ -20,6 +20,30 @@
           "lib/netstandard2.0/MvvmCross.dll": {}
         }
       },
+      "MvvmCross.Plugin.Location/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross": "6.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmCross.Plugin.Location.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmCross.Plugin.Location.dll": {}
+        }
+      },
+      "MvvmCross.Plugin.Messenger/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MvvmCross": "6.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/MvvmCross.Plugin.Messenger.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmCross.Plugin.Messenger.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.1": {
         "type": "package",
         "dependencies": {
@@ -78,6 +102,45 @@
         "mvvmcross.6.0.1.nupkg.sha512",
         "mvvmcross.nuspec",
         "readme.txt"
+      ]
+    },
+    "MvvmCross.Plugin.Location/6.0.1": {
+      "sha512": "3wsHCO9lg6u3zsh46Kk/JFXq/TJRD2YctIfm9ThcxuvhzpV+3jVt/cwa+ppDdX3Px8N/IFgRkL2wt2DKMHvPhQ==",
+      "type": "package",
+      "path": "mvvmcross.plugin.location/6.0.1",
+      "files": [
+        "lib/monoandroid81/MvvmCross.Plugin.Location.dll",
+        "lib/monoandroid81/MvvmCross.Plugin.Location.xml",
+        "lib/net461/MvvmCross.Plugin.Location.dll",
+        "lib/net461/MvvmCross.Plugin.Location.xml",
+        "lib/netstandard2.0/MvvmCross.Plugin.Location.dll",
+        "lib/netstandard2.0/MvvmCross.Plugin.Location.xml",
+        "lib/tizen40/MvvmCross.Plugin.Location.dll",
+        "lib/tizen40/MvvmCross.Plugin.Location.xml",
+        "lib/uap10.0.16299/MvvmCross.Plugin.Location.dll",
+        "lib/uap10.0.16299/MvvmCross.Plugin.Location.pri",
+        "lib/uap10.0.16299/MvvmCross.Plugin.Location.xml",
+        "lib/xamarinios10/MvvmCross.Plugin.Location.dll",
+        "lib/xamarinios10/MvvmCross.Plugin.Location.xml",
+        "lib/xamarinmac20/MvvmCross.Plugin.Location.dll",
+        "lib/xamarinmac20/MvvmCross.Plugin.Location.xml",
+        "lib/xamarintvos10/MvvmCross.Plugin.Location.dll",
+        "lib/xamarintvos10/MvvmCross.Plugin.Location.xml",
+        "lib/xamarinwatchos10/MvvmCross.Plugin.Location.dll",
+        "lib/xamarinwatchos10/MvvmCross.Plugin.Location.xml",
+        "mvvmcross.plugin.location.6.0.1.nupkg.sha512",
+        "mvvmcross.plugin.location.nuspec"
+      ]
+    },
+    "MvvmCross.Plugin.Messenger/6.0.1": {
+      "sha512": "YfIqYBTSDXT+dgspNLYzZzZjn2lyfiu1sN/YUIraOjKhZ+/8xuV0UtL+I3f0Uuv/jZqKYoMRyNXCil662uJvrw==",
+      "type": "package",
+      "path": "mvvmcross.plugin.messenger/6.0.1",
+      "files": [
+        "lib/netstandard2.0/MvvmCross.Plugin.Messenger.dll",
+        "lib/netstandard2.0/MvvmCross.Plugin.Messenger.xml",
+        "mvvmcross.plugin.messenger.6.0.1.nupkg.sha512",
+        "mvvmcross.plugin.messenger.nuspec"
       ]
     },
     "NETStandard.Library/2.0.1": {
@@ -212,12 +275,13 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "MvvmCross >= 6.0.1",
+      "MvvmCross.Plugin.Location >= 6.0.1",
+      "MvvmCross.Plugin.Messenger >= 6.0.1",
       "NETStandard.Library >= 2.0.1"
     ]
   },
   "packageFolders": {
     "C:\\Users\\Ernst\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -230,13 +294,11 @@
       "outputPath": "C:\\Users\\Ernst\\Documents\\Bitbucket\\CarrotMVVM\\Carrot\\Carrot.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\Ernst\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -260,6 +322,14 @@
       "netstandard2.0": {
         "dependencies": {
           "MvvmCross": {
+            "target": "Package",
+            "version": "[6.0.1, )"
+          },
+          "MvvmCross.Plugin.Location": {
+            "target": "Package",
+            "version": "[6.0.1, )"
+          },
+          "MvvmCross.Plugin.Messenger": {
             "target": "Package",
             "version": "[6.0.1, )"
           },

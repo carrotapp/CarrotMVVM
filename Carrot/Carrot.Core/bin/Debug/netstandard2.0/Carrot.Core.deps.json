@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "2468f8819b4e290b1a8667020137de51bd83af19"
+    "signature": "d6abe97acbc3a1bd3208affb8b512460a49fa4c8"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,9 @@
     ".NETStandard,Version=v2.0/": {
       "Carrot.Core/1.0.0": {
         "dependencies": {
+          "MvvmCross": "6.0.1",
+          "MvvmCross.Plugin.Location": "6.0.1",
+          "MvvmCross.Plugin.Messenger": "6.0.1",
           "NETStandard.Library": "2.0.1"
         },
         "runtime": {
@@ -16,6 +19,27 @@
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
+      "MvvmCross/6.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/MvvmCross.dll": {}
+        }
+      },
+      "MvvmCross.Plugin.Location/6.0.1": {
+        "dependencies": {
+          "MvvmCross": "6.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmCross.Plugin.Location.dll": {}
+        }
+      },
+      "MvvmCross.Plugin.Messenger/6.0.1": {
+        "dependencies": {
+          "MvvmCross": "6.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MvvmCross.Plugin.Messenger.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -35,6 +59,27 @@
       "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "path": "microsoft.netcore.platforms/1.1.0",
       "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "MvvmCross/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bffnef8ZWj+9lIX71CCRKVp5oeuMIz4aV0hj/doyqDw14Smxb5bkHOaodbE0Hrkn9x9xixu9t0UnXiJX2Xy4Hw==",
+      "path": "mvvmcross/6.0.1",
+      "hashPath": "mvvmcross.6.0.1.nupkg.sha512"
+    },
+    "MvvmCross.Plugin.Location/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3wsHCO9lg6u3zsh46Kk/JFXq/TJRD2YctIfm9ThcxuvhzpV+3jVt/cwa+ppDdX3Px8N/IFgRkL2wt2DKMHvPhQ==",
+      "path": "mvvmcross.plugin.location/6.0.1",
+      "hashPath": "mvvmcross.plugin.location.6.0.1.nupkg.sha512"
+    },
+    "MvvmCross.Plugin.Messenger/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YfIqYBTSDXT+dgspNLYzZzZjn2lyfiu1sN/YUIraOjKhZ+/8xuV0UtL+I3f0Uuv/jZqKYoMRyNXCil662uJvrw==",
+      "path": "mvvmcross.plugin.messenger/6.0.1",
+      "hashPath": "mvvmcross.plugin.messenger.6.0.1.nupkg.sha512"
     },
     "NETStandard.Library/2.0.1": {
       "type": "package",
