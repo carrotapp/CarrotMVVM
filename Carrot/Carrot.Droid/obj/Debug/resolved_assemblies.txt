@@ -1,5 +1,6 @@
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\Carrot.Droid.dll
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\Carrot.Core.dll
+C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\FloatingActionButton-Xamarin.dll
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\Java.Interop.dll
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\Mono.Android.dll
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\Mono.Android.Export.dll
@@ -7,6 +8,8 @@ C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\andr
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\MvvmCross.dll
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\MvvmCross.Plugin.Location.dll
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\MvvmCross.Plugin.Messenger.dll
+C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\Plugin.Settings.Abstractions.dll
+C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\Plugin.Settings.dll
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\System.Core.dll
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\System.dll
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Droid\obj\Debug\android\assets\System.Xml.dll

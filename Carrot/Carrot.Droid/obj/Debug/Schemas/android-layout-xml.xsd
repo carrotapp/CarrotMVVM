@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v26</xs:documentation>
-    <xs:documentation>2018/05/21 01:22:18 PM</xs:documentation>
+    <xs:documentation>2018/05/22 11:27:16 AM</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -83,6 +83,9 @@
       <xs:element ref="TextureView" />
       <xs:element ref="ViewStub" />
       <xs:element ref="fragment" />
+      <xs:element ref="com.github.clans.fab.Label" />
+      <xs:element ref="com.github.clans.fab.FloatingActionMenu" />
+      <xs:element ref="com.github.clans.fab.FloatingActionButton" />
       <xs:element ref="MvvmCross.Platforms.Android.Binding.Views.MvxTimePicker" />
       <xs:element ref="MvvmCross.Platforms.Android.Binding.Views.MvxSpinner" />
       <xs:element ref="MvvmCross.Platforms.Android.Binding.Views.MvxRadioGroup" />
@@ -249,10 +252,9 @@
     <xs:attribute ref="android:nextClusterForward" />
     <xs:attribute ref="android:focusedByDefault" />
     <xs:attribute ref="tools:visibility" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
-    <xs:attribute ref="android:layout_weight" />
-    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_margin" />
     <xs:attribute ref="android:layout_marginLeft" />
     <xs:attribute ref="android:layout_marginTop" />
@@ -1439,10 +1441,9 @@
     <xs:attribute ref="android:fragmentAllowEnterTransitionOverlap" />
     <xs:attribute ref="android:fragmentAllowReturnTransitionOverlap" />
     <xs:attribute ref="tools:layout" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
-    <xs:attribute ref="android:layout_weight" />
-    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_margin" />
     <xs:attribute ref="android:layout_marginLeft" />
     <xs:attribute ref="android:layout_marginTop" />
@@ -1453,6 +1454,97 @@
     <xs:attribute ref="android:layout_marginHorizontal" />
     <xs:attribute ref="android:layout_marginVertical" />
     <xs:attribute ref="android:style" />
+  </xs:complexType>
+  <xs:element name="com.github.clans.fab.Label" type="com.github.clans.fab.Label">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Clans.Fab.Label</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.github.clans.fab.Label">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TextView" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.github.clans.fab.FloatingActionMenu" type="com.github.clans.fab.FloatingActionMenu">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Clans.Fab.FloatingActionMenu</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.github.clans.fab.FloatingActionMenu">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup">
+        <xs:attribute ref="app:menu_showShadow" />
+        <xs:attribute ref="app:menu_buttonSpacing" />
+        <xs:attribute ref="app:menu_labels_margin" />
+        <xs:attribute ref="app:menu_labels_showAnimation" />
+        <xs:attribute ref="app:menu_labels_hideAnimation" />
+        <xs:attribute ref="app:menu_labels_paddingTop" />
+        <xs:attribute ref="app:menu_labels_paddingLeft" />
+        <xs:attribute ref="app:menu_labels_paddingRight" />
+        <xs:attribute ref="app:menu_labels_paddingBottom" />
+        <xs:attribute ref="app:menu_labels_padding" />
+        <xs:attribute ref="app:menu_labels_textColor" />
+        <xs:attribute ref="app:menu_labels_textSize" />
+        <xs:attribute ref="app:menu_labels_cornerRadius" />
+        <xs:attribute ref="app:menu_labels_showShadow" />
+        <xs:attribute ref="app:menu_labels_colorNormal" />
+        <xs:attribute ref="app:menu_labels_colorPressed" />
+        <xs:attribute ref="app:menu_labels_colorRipple" />
+        <xs:attribute ref="app:menu_labels_position" />
+        <xs:attribute ref="app:menu_icon" />
+        <xs:attribute ref="app:menu_animationDelayPerItem" />
+        <xs:attribute ref="app:menu_buttonToggleAnimation" />
+        <xs:attribute ref="app:menu_labels_singleLine" />
+        <xs:attribute ref="app:menu_labels_ellipsize" />
+        <xs:attribute ref="app:menu_labels_maxLines" />
+        <xs:attribute ref="app:menu_fab_size" />
+        <xs:attribute ref="app:menu_labels_style" />
+        <xs:attribute ref="app:menu_labels_customFont" />
+        <xs:attribute ref="app:menu_shadowColor" />
+        <xs:attribute ref="app:menu_shadowRadius" />
+        <xs:attribute ref="app:menu_shadowXOffset" />
+        <xs:attribute ref="app:menu_shadowYOffset" />
+        <xs:attribute ref="app:menu_colorNormal" />
+        <xs:attribute ref="app:menu_colorPressed" />
+        <xs:attribute ref="app:menu_colorRipple" />
+        <xs:attribute ref="app:menu_openDirection" />
+        <xs:attribute ref="app:menu_backgroundColor" />
+        <xs:attribute ref="app:menu_fab_label" />
+        <xs:attribute ref="app:menu_fab_show_animation" />
+        <xs:attribute ref="app:menu_fab_hide_animation" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="com.github.clans.fab.FloatingActionButton" type="com.github.clans.fab.FloatingActionButton">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Clans.Fab.FloatingActionButton</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="com.github.clans.fab.FloatingActionButton">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ImageButton">
+        <xs:attribute ref="app:fab_colorNormal" />
+        <xs:attribute ref="app:fab_colorPressed" />
+        <xs:attribute ref="app:fab_colorDisabled" />
+        <xs:attribute ref="app:fab_colorRipple" />
+        <xs:attribute ref="app:fab_showShadow" />
+        <xs:attribute ref="app:fab_shadowColor" />
+        <xs:attribute ref="app:fab_shadowRadius" />
+        <xs:attribute ref="app:fab_shadowXOffset" />
+        <xs:attribute ref="app:fab_shadowYOffset" />
+        <xs:attribute ref="app:fab_size" />
+        <xs:attribute ref="app:fab_showAnimation" />
+        <xs:attribute ref="app:fab_hideAnimation" />
+        <xs:attribute ref="app:fab_label" />
+        <xs:attribute ref="app:fab_elevationCompat" />
+        <xs:attribute ref="app:fab_progress_color" />
+        <xs:attribute ref="app:fab_progress_backgroundColor" />
+        <xs:attribute ref="app:fab_progress_indeterminate" />
+        <xs:attribute ref="app:fab_progress_max" />
+        <xs:attribute ref="app:fab_progress" />
+        <xs:attribute ref="app:fab_progress_showBackground" />
+      </xs:extension>
+    </xs:complexContent>
   </xs:complexType>
   <xs:element name="MvvmCross.Platforms.Android.Binding.Views.MvxTimePicker" type="MvvmCross.Platforms.Android.Binding.Views.MvxTimePicker">
     <xs:annotation>

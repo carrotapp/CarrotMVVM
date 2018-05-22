@@ -108,9 +108,12 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "Carrot.Droid.dll" comes first in this list. */
 		"Carrot.Droid.dll",
 		"Carrot.Core.dll",
+		"FloatingActionButton-Xamarin.dll",
 		"MvvmCross.dll",
 		"MvvmCross.Plugin.Location.dll",
 		"MvvmCross.Plugin.Messenger.dll",
+		"Plugin.Settings.Abstractions.dll",
+		"Plugin.Settings.dll",
 		"Xamarin.Android.Support.Annotations.dll",
 		"Xamarin.Android.Support.Compat.dll",
 		"Xamarin.Android.Support.Core.UI.dll",

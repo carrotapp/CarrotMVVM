@@ -46,6 +46,37 @@ namespace Carrot.Droid
 			global::MvvmCross.Resource.Styleable.MvxListView_MvxItemTemplate = global::Carrot.Droid.Resource.Styleable.MvxListView_MvxItemTemplate;
 		}
 		
+		public partial class Animation
+		{
+			
+			// aapt resource value: 2130903040
+			public static int fab_scale_down = 2130903040;
+			
+			// aapt resource value: 2130903041
+			public static int fab_scale_up = 2130903041;
+			
+			// aapt resource value: 2130903042
+			public static int fab_slide_in_from_left = 2130903042;
+			
+			// aapt resource value: 2130903043
+			public static int fab_slide_in_from_right = 2130903043;
+			
+			// aapt resource value: 2130903044
+			public static int fab_slide_out_to_left = 2130903044;
+			
+			// aapt resource value: 2130903045
+			public static int fab_slide_out_to_right = 2130903045;
+			
+			static Animation()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Animation()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -223,6 +254,66 @@ namespace Carrot.Droid
 			// aapt resource value: 1
 			public static int environment = 1;
 			
+			// aapt resource value: 2130771970
+			public static int fab_colorDisabled = 2130771970;
+			
+			// aapt resource value: 2130771968
+			public static int fab_colorNormal = 2130771968;
+			
+			// aapt resource value: 2130771969
+			public static int fab_colorPressed = 2130771969;
+			
+			// aapt resource value: 2130771971
+			public static int fab_colorRipple = 2130771971;
+			
+			// aapt resource value: 2130771981
+			public static int fab_elevationCompat = 2130771981;
+			
+			// aapt resource value: 2130771979
+			public static int fab_hideAnimation = 2130771979;
+			
+			// aapt resource value: 2130771980
+			public static int fab_label = 2130771980;
+			
+			// aapt resource value: 2130771986
+			public static int fab_progress = 2130771986;
+			
+			// aapt resource value: 2130771983
+			public static int fab_progress_backgroundColor = 2130771983;
+			
+			// aapt resource value: 2130771982
+			public static int fab_progress_color = 2130771982;
+			
+			// aapt resource value: 2130771984
+			public static int fab_progress_indeterminate = 2130771984;
+			
+			// aapt resource value: 2130771985
+			public static int fab_progress_max = 2130771985;
+			
+			// aapt resource value: 2130771987
+			public static int fab_progress_showBackground = 2130771987;
+			
+			// aapt resource value: 2130771973
+			public static int fab_shadowColor = 2130771973;
+			
+			// aapt resource value: 2130771974
+			public static int fab_shadowRadius = 2130771974;
+			
+			// aapt resource value: 2130771975
+			public static int fab_shadowXOffset = 2130771975;
+			
+			// aapt resource value: 2130771976
+			public static int fab_shadowYOffset = 2130771976;
+			
+			// aapt resource value: 2130771978
+			public static int fab_showAnimation = 2130771978;
+			
+			// aapt resource value: 2130771972
+			public static int fab_showShadow = 2130771972;
+			
+			// aapt resource value: 2130771977
+			public static int fab_size = 2130771977;
+			
 			// aapt resource value: 1
 			public static int featureType = 1;
 			
@@ -309,6 +400,123 @@ namespace Carrot.Droid
 			
 			// aapt resource value: 1
 			public static int maskedWalletDetailsTextAppearance = 1;
+			
+			// aapt resource value: 2130772007
+			public static int menu_animationDelayPerItem = 2130772007;
+			
+			// aapt resource value: 2130772023
+			public static int menu_backgroundColor = 2130772023;
+			
+			// aapt resource value: 2130771989
+			public static int menu_buttonSpacing = 2130771989;
+			
+			// aapt resource value: 2130772008
+			public static int menu_buttonToggleAnimation = 2130772008;
+			
+			// aapt resource value: 2130772019
+			public static int menu_colorNormal = 2130772019;
+			
+			// aapt resource value: 2130772020
+			public static int menu_colorPressed = 2130772020;
+			
+			// aapt resource value: 2130772021
+			public static int menu_colorRipple = 2130772021;
+			
+			// aapt resource value: 2130772026
+			public static int menu_fab_hide_animation = 2130772026;
+			
+			// aapt resource value: 2130772024
+			public static int menu_fab_label = 2130772024;
+			
+			// aapt resource value: 2130772025
+			public static int menu_fab_show_animation = 2130772025;
+			
+			// aapt resource value: 2130772012
+			public static int menu_fab_size = 2130772012;
+			
+			// aapt resource value: 2130772006
+			public static int menu_icon = 2130772006;
+			
+			// aapt resource value: 2130772002
+			public static int menu_labels_colorNormal = 2130772002;
+			
+			// aapt resource value: 2130772003
+			public static int menu_labels_colorPressed = 2130772003;
+			
+			// aapt resource value: 2130772004
+			public static int menu_labels_colorRipple = 2130772004;
+			
+			// aapt resource value: 2130772000
+			public static int menu_labels_cornerRadius = 2130772000;
+			
+			// aapt resource value: 2130772014
+			public static int menu_labels_customFont = 2130772014;
+			
+			// aapt resource value: 2130772010
+			public static int menu_labels_ellipsize = 2130772010;
+			
+			// aapt resource value: 2130771992
+			public static int menu_labels_hideAnimation = 2130771992;
+			
+			// aapt resource value: 2130771990
+			public static int menu_labels_margin = 2130771990;
+			
+			// aapt resource value: 2130772011
+			public static int menu_labels_maxLines = 2130772011;
+			
+			// aapt resource value: 2130771997
+			public static int menu_labels_padding = 2130771997;
+			
+			// aapt resource value: 2130771996
+			public static int menu_labels_paddingBottom = 2130771996;
+			
+			// aapt resource value: 2130771994
+			public static int menu_labels_paddingLeft = 2130771994;
+			
+			// aapt resource value: 2130771995
+			public static int menu_labels_paddingRight = 2130771995;
+			
+			// aapt resource value: 2130771993
+			public static int menu_labels_paddingTop = 2130771993;
+			
+			// aapt resource value: 2130772005
+			public static int menu_labels_position = 2130772005;
+			
+			// aapt resource value: 2130771991
+			public static int menu_labels_showAnimation = 2130771991;
+			
+			// aapt resource value: 2130772001
+			public static int menu_labels_showShadow = 2130772001;
+			
+			// aapt resource value: 2130772009
+			public static int menu_labels_singleLine = 2130772009;
+			
+			// aapt resource value: 2130772013
+			public static int menu_labels_style = 2130772013;
+			
+			// aapt resource value: 2130771998
+			public static int menu_labels_textColor = 2130771998;
+			
+			// aapt resource value: 2130771999
+			public static int menu_labels_textSize = 2130771999;
+			
+			// aapt resource value: 2130772022
+			public static int menu_openDirection = 2130772022;
+			
+			// aapt resource value: 2130772015
+			public static int menu_shadowColor = 2130772015;
+			
+			// aapt resource value: 2130772016
+			public static int menu_shadowRadius = 2130772016;
+			
+			// aapt resource value: 2130772017
+			public static int menu_shadowXOffset = 2130772017;
+			
+			// aapt resource value: 2130772018
+			public static int menu_shadowYOffset = 2130772018;
+			
+			// aapt resource value: 2130771988
+			public static int menu_showShadow = 2130771988;
 			
 			// aapt resource value: 0
 			public static int MvxBind = 0;
@@ -525,6 +733,9 @@ namespace Carrot.Droid
 			// aapt resource value: 0
 			public static int common_google_signin_btn_tint = 0;
 			
+			// aapt resource value: 0
+			public static int customPrimary = 0;
+			
 			// aapt resource value: 2131099649
 			public static int notification_action_color_filter = 2131099649;
 			
@@ -717,6 +928,15 @@ namespace Carrot.Droid
 			
 			// aapt resource value: 2131230725
 			public static int compat_control_corner_material = 2131230725;
+			
+			// aapt resource value: 2130968576
+			public static int fab_size_mini = 2130968576;
+			
+			// aapt resource value: 2130968577
+			public static int fab_size_normal = 2130968577;
+			
+			// aapt resource value: 2130968578
+			public static int labels_text_size = 2130968578;
 			
 			// aapt resource value: 2131230726
 			public static int notification_action_icon_size = 2131230726;
@@ -1025,6 +1245,12 @@ namespace Carrot.Droid
 			// aapt resource value: 0
 			public static int common_google_signin_btn_text_light_normal_background = 0;
 			
+			// aapt resource value: 2130837504
+			public static int fab_add = 2130837504;
+			
+			// aapt resource value: 0
+			public static int filter_icon = 0;
+			
 			// aapt resource value: 0
 			public static int googleg_disabled_color_18 = 0;
 			
@@ -1042,6 +1268,9 @@ namespace Carrot.Droid
 			
 			// aapt resource value: 1
 			public static int ic_plusone_tall_off_client = 1;
+			
+			// aapt resource value: 0
+			public static int nearby_icon = 0;
 			
 			// aapt resource value: 2131296257
 			public static int notification_action_background = 2131296257;
@@ -1084,6 +1313,9 @@ namespace Carrot.Droid
 			
 			// aapt resource value: 1
 			public static int places_ic_search = 1;
+			
+			// aapt resource value: 0
+			public static int plus_icon = 0;
 			
 			// aapt resource value: 1
 			public static int powered_by_google_dark = 1;
@@ -1416,8 +1648,14 @@ namespace Carrot.Droid
 			// aapt resource value: 1
 			public static int donate_with_google = 1;
 			
+			// aapt resource value: 2131034122
+			public static int down = 2131034122;
+			
 			// aapt resource value: 1
 			public static int email = 1;
+			
+			// aapt resource value: 2131034117
+			public static int end = 2131034117;
 			
 			// aapt resource value: 2131492875
 			public static int end_padder = 2131492875;
@@ -1427,6 +1665,15 @@ namespace Carrot.Droid
 			
 			// aapt resource value: 1
 			public static int expanded_controller_layout = 1;
+			
+			// aapt resource value: 0
+			public static int fabMenu = 0;
+			
+			// aapt resource value: 2131034112
+			public static int fab_label = 2131034112;
+			
+			// aapt resource value: 0
+			public static int filterMenuItem = 0;
 			
 			// aapt resource value: 2131492873
 			public static int forever = 2131492873;
@@ -1500,6 +1747,9 @@ namespace Carrot.Droid
 			// aapt resource value: 1
 			public static int large_icon_uri = 1;
 			
+			// aapt resource value: 2131034115
+			public static int left = 2131034115;
+			
 			// aapt resource value: 1
 			public static int license = 1;
 			
@@ -1536,6 +1786,9 @@ namespace Carrot.Droid
 			// aapt resource value: 0
 			public static int map = 0;
 			
+			// aapt resource value: 2131034118
+			public static int marquee = 2131034118;
+			
 			// aapt resource value: 1
 			public static int match_global_nicknames = 1;
 			
@@ -1544,6 +1797,12 @@ namespace Carrot.Droid
 			
 			// aapt resource value: 2131492883
 			public static int media_actions = 2131492883;
+			
+			// aapt resource value: 2131034119
+			public static int middle = 2131034119;
+			
+			// aapt resource value: 2131034113
+			public static int mini = 2131034113;
 			
 			// aapt resource value: 1
 			public static int monochrome = 1;
@@ -1554,11 +1813,11 @@ namespace Carrot.Droid
 			// aapt resource value: 0
 			public static int MvxBindingTagUnique = 0;
 			
-			// aapt resource value: 0
-			public static int none = 0;
+			// aapt resource value: 2131034120
+			public static int none = 2131034120;
 			
-			// aapt resource value: 2131492880
-			public static int normal = 2131492880;
+			// aapt resource value: 2131034114
+			public static int normal = 2131034114;
 			
 			// aapt resource value: 2131492881
 			public static int notification_background = 2131492881;
@@ -1577,6 +1836,9 @@ namespace Carrot.Droid
 			
 			// aapt resource value: 1
 			public static int omnibox_url_section = 1;
+			
+			// aapt resource value: 0
+			public static int placesNearbyMenuItem = 0;
 			
 			// aapt resource value: 1
 			public static int place_autocomplete_clear_button = 1;
@@ -1617,6 +1879,9 @@ namespace Carrot.Droid
 			// aapt resource value: 1
 			public static int rfc822 = 1;
 			
+			// aapt resource value: 2131034116
+			public static int right = 2131034116;
+			
 			// aapt resource value: 2131492884
 			public static int right_icon = 2131492884;
 			
@@ -1643,6 +1908,9 @@ namespace Carrot.Droid
 			
 			// aapt resource value: 0
 			public static int standard = 0;
+			
+			// aapt resource value: 2131034121
+			public static int start = 2131034121;
 			
 			// aapt resource value: 1
 			public static int start_text = 1;
@@ -1697,6 +1965,9 @@ namespace Carrot.Droid
 			
 			// aapt resource value: 1
 			public static int toolbar = 1;
+			
+			// aapt resource value: 2131034123
+			public static int up = 2131034123;
 			
 			// aapt resource value: 1
 			public static int url = 1;
@@ -1763,9 +2034,6 @@ namespace Carrot.Droid
 			// aapt resource value: 1
 			public static int cast_tracks_chooser_dialog_row_layout = 1;
 			
-			// aapt resource value: 0
-			public static int ExploreView = 0;
-			
 			// aapt resource value: 1
 			public static int libraries_social_licenses_license = 1;
 			
@@ -1777,6 +2045,9 @@ namespace Carrot.Droid
 			
 			// aapt resource value: 1
 			public static int license_menu_activity_no_licenses = 1;
+			
+			// aapt resource value: 0
+			public static int NetworkView = 0;
 			
 			// aapt resource value: 2131689473
 			public static int notification_action = 2131689473;
@@ -2097,6 +2368,9 @@ namespace Carrot.Droid
 		
 		public partial class Style
 		{
+			
+			// aapt resource value: 0
+			public static int CarrotTheme = 0;
 			
 			// aapt resource value: 1
 			public static int CastExpandedController = 1;
@@ -2434,6 +2708,246 @@ namespace Carrot.Droid
 			
 			// aapt resource value: 1
 			public static int FeatureParam_paramValue = 1;
+			
+			public static int[] FloatingActionButton = new int[] {
+					2130771968,
+					2130771969,
+					2130771970,
+					2130771971,
+					2130771972,
+					2130771973,
+					2130771974,
+					2130771975,
+					2130771976,
+					2130771977,
+					2130771978,
+					2130771979,
+					2130771980,
+					2130771981,
+					2130771982,
+					2130771983,
+					2130771984,
+					2130771985,
+					2130771986,
+					2130771987};
+			
+			// aapt resource value: 2
+			public static int FloatingActionButton_fab_colorDisabled = 2;
+			
+			// aapt resource value: 0
+			public static int FloatingActionButton_fab_colorNormal = 0;
+			
+			// aapt resource value: 1
+			public static int FloatingActionButton_fab_colorPressed = 1;
+			
+			// aapt resource value: 3
+			public static int FloatingActionButton_fab_colorRipple = 3;
+			
+			// aapt resource value: 19
+			public static int FloatingActionButton_fab_elevationCompat = 19;
+			
+			// aapt resource value: 17
+			public static int FloatingActionButton_fab_hideAnimation = 17;
+			
+			// aapt resource value: 18
+			public static int FloatingActionButton_fab_label = 18;
+			
+			// aapt resource value: 24
+			public static int FloatingActionButton_fab_progress = 24;
+			
+			// aapt resource value: 21
+			public static int FloatingActionButton_fab_progress_backgroundColor = 21;
+			
+			// aapt resource value: 20
+			public static int FloatingActionButton_fab_progress_color = 20;
+			
+			// aapt resource value: 22
+			public static int FloatingActionButton_fab_progress_indeterminate = 22;
+			
+			// aapt resource value: 23
+			public static int FloatingActionButton_fab_progress_max = 23;
+			
+			// aapt resource value: 25
+			public static int FloatingActionButton_fab_progress_showBackground = 25;
+			
+			// aapt resource value: 5
+			public static int FloatingActionButton_fab_shadowColor = 5;
+			
+			// aapt resource value: 6
+			public static int FloatingActionButton_fab_shadowRadius = 6;
+			
+			// aapt resource value: 7
+			public static int FloatingActionButton_fab_shadowXOffset = 7;
+			
+			// aapt resource value: 8
+			public static int FloatingActionButton_fab_shadowYOffset = 8;
+			
+			// aapt resource value: 16
+			public static int FloatingActionButton_fab_showAnimation = 16;
+			
+			// aapt resource value: 4
+			public static int FloatingActionButton_fab_showShadow = 4;
+			
+			// aapt resource value: 9
+			public static int FloatingActionButton_fab_size = 9;
+			
+			public static int[] FloatingActionMenu = new int[] {
+					2130771988,
+					2130771989,
+					2130771990,
+					2130771991,
+					2130771992,
+					2130771993,
+					2130771994,
+					2130771995,
+					2130771996,
+					2130771997,
+					2130771998,
+					2130771999,
+					2130772000,
+					2130772001,
+					2130772002,
+					2130772003,
+					2130772004,
+					2130772005,
+					2130772006,
+					2130772007,
+					2130772008,
+					2130772009,
+					2130772010,
+					2130772011,
+					2130772012,
+					2130772013,
+					2130772014,
+					2130772015,
+					2130772016,
+					2130772017,
+					2130772018,
+					2130772019,
+					2130772020,
+					2130772021,
+					2130772022,
+					2130772023,
+					2130772024,
+					2130772025,
+					2130772026};
+			
+			// aapt resource value: 25
+			public static int FloatingActionMenu_menu_animationDelayPerItem = 25;
+			
+			// aapt resource value: 53
+			public static int FloatingActionMenu_menu_backgroundColor = 53;
+			
+			// aapt resource value: 1
+			public static int FloatingActionMenu_menu_buttonSpacing = 1;
+			
+			// aapt resource value: 32
+			public static int FloatingActionMenu_menu_buttonToggleAnimation = 32;
+			
+			// aapt resource value: 49
+			public static int FloatingActionMenu_menu_colorNormal = 49;
+			
+			// aapt resource value: 50
+			public static int FloatingActionMenu_menu_colorPressed = 50;
+			
+			// aapt resource value: 51
+			public static int FloatingActionMenu_menu_colorRipple = 51;
+			
+			// aapt resource value: 56
+			public static int FloatingActionMenu_menu_fab_hide_animation = 56;
+			
+			// aapt resource value: 54
+			public static int FloatingActionMenu_menu_fab_label = 54;
+			
+			// aapt resource value: 55
+			public static int FloatingActionMenu_menu_fab_show_animation = 55;
+			
+			// aapt resource value: 36
+			public static int FloatingActionMenu_menu_fab_size = 36;
+			
+			// aapt resource value: 24
+			public static int FloatingActionMenu_menu_icon = 24;
+			
+			// aapt resource value: 20
+			public static int FloatingActionMenu_menu_labels_colorNormal = 20;
+			
+			// aapt resource value: 21
+			public static int FloatingActionMenu_menu_labels_colorPressed = 21;
+			
+			// aapt resource value: 22
+			public static int FloatingActionMenu_menu_labels_colorRipple = 22;
+			
+			// aapt resource value: 18
+			public static int FloatingActionMenu_menu_labels_cornerRadius = 18;
+			
+			// aapt resource value: 38
+			public static int FloatingActionMenu_menu_labels_customFont = 38;
+			
+			// aapt resource value: 34
+			public static int FloatingActionMenu_menu_labels_ellipsize = 34;
+			
+			// aapt resource value: 4
+			public static int FloatingActionMenu_menu_labels_hideAnimation = 4;
+			
+			// aapt resource value: 2
+			public static int FloatingActionMenu_menu_labels_margin = 2;
+			
+			// aapt resource value: 35
+			public static int FloatingActionMenu_menu_labels_maxLines = 35;
+			
+			// aapt resource value: 9
+			public static int FloatingActionMenu_menu_labels_padding = 9;
+			
+			// aapt resource value: 8
+			public static int FloatingActionMenu_menu_labels_paddingBottom = 8;
+			
+			// aapt resource value: 6
+			public static int FloatingActionMenu_menu_labels_paddingLeft = 6;
+			
+			// aapt resource value: 7
+			public static int FloatingActionMenu_menu_labels_paddingRight = 7;
+			
+			// aapt resource value: 5
+			public static int FloatingActionMenu_menu_labels_paddingTop = 5;
+			
+			// aapt resource value: 23
+			public static int FloatingActionMenu_menu_labels_position = 23;
+			
+			// aapt resource value: 3
+			public static int FloatingActionMenu_menu_labels_showAnimation = 3;
+			
+			// aapt resource value: 19
+			public static int FloatingActionMenu_menu_labels_showShadow = 19;
+			
+			// aapt resource value: 33
+			public static int FloatingActionMenu_menu_labels_singleLine = 33;
+			
+			// aapt resource value: 37
+			public static int FloatingActionMenu_menu_labels_style = 37;
+			
+			// aapt resource value: 16
+			public static int FloatingActionMenu_menu_labels_textColor = 16;
+			
+			// aapt resource value: 17
+			public static int FloatingActionMenu_menu_labels_textSize = 17;
+			
+			// aapt resource value: 52
+			public static int FloatingActionMenu_menu_openDirection = 52;
+			
+			// aapt resource value: 39
+			public static int FloatingActionMenu_menu_shadowColor = 39;
+			
+			// aapt resource value: 40
+			public static int FloatingActionMenu_menu_shadowRadius = 40;
+			
+			// aapt resource value: 41
+			public static int FloatingActionMenu_menu_shadowXOffset = 41;
+			
+			// aapt resource value: 48
+			public static int FloatingActionMenu_menu_shadowYOffset = 48;
+			
+			// aapt resource value: 0
+			public static int FloatingActionMenu_menu_showShadow = 0;
 			
 			public static int[] FontFamily = new int[] {
 					2130968578,
