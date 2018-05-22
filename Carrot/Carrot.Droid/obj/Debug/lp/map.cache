@@ -1,5 +1,7 @@
 Carrot.Core
 MvvmCross
+MvvmCross.Plugin.Location
+MvvmCross.Plugin.Messenger
 System.Runtime
 Xamarin.Android.Support.Annotations
 Xamarin.Android.Support.Compat
@@ -11,6 +13,3 @@ Xamarin.GooglePlayServices.Base
 Xamarin.GooglePlayServices.Basement
 Xamarin.GooglePlayServices.Maps
 Xamarin.GooglePlayServices.Tasks
-netstandard
-MvvmCross.Plugin.Location
-MvvmCross.Plugin.Messenger

@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
+using Android.Graphics;
 using Android.OS;
 using Carrot.Core.ViewModels;
 using MvvmCross.Platforms.Android.Views;
@@ -39,15 +40,19 @@ namespace Carrot.Droid.Views
         {
             _map = googleMap;
 
-            CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
-            builder.Target(new LatLng(ViewModel.Lat, ViewModel.Lng));
-            builder.Zoom(18);
-            CameraPosition cameraPosition = builder.Build();
-            CameraUpdate cameraUpdate = CameraUpdateFactory.NewCameraPosition(cameraPosition);
+            //CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
+            //builder.Target(new LatLng(ViewModel.Lat, ViewModel.Lng));
+            //builder.Zoom(18);
+            //CameraPosition cameraPosition = builder.Build();
+            //CameraUpdate cameraUpdate = CameraUpdateFactory.NewCameraPosition(cameraPosition);
 
-            _map.MoveCamera(cameraUpdate);
+            //_map.MoveCamera(cameraUpdate);
+
             var options = new MarkerOptions();
-            options.SetPosition(new LatLng(ViewModel.Lat, ViewModel.Lng));
+            Bitmap bmp = BitmapFactory.DecodeResource(Resources, Resource.Mipmap.carrot);
+            options.SetIcon(BitmapDescriptorFactory.FromBitmap(bmp));
+
+            options.SetPosition(new LatLng(0, 0));
             options.SetTitle("My location");
             Marker marker = _map.AddMarker(options);
         }

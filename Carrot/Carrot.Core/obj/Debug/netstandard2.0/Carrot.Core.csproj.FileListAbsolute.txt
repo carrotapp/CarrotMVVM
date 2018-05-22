@@ -13,3 +13,11 @@ C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Core\obj\Debug\netst
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Core\obj\Debug\netstandard2.0\Carrot.Core.dll
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Core\obj\Debug\netstandard2.0\Carrot.Core.pdb
 C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot\Carrot.Core\obj\Debug\netstandard2.0\Carrot.Core.csprojAssemblyReference.cache
+C:\Users\Malcolm\Documents\CarrotMVVM\Carrot\Carrot.Core\bin\Debug\netstandard2.0\Carrot.Core.deps.json
+C:\Users\Malcolm\Documents\CarrotMVVM\Carrot\Carrot.Core\bin\Debug\netstandard2.0\Carrot.Core.dll
+C:\Users\Malcolm\Documents\CarrotMVVM\Carrot\Carrot.Core\bin\Debug\netstandard2.0\Carrot.Core.pdb
+C:\Users\Malcolm\Documents\CarrotMVVM\Carrot\Carrot.Core\obj\Debug\netstandard2.0\Carrot.Core.csproj.CoreCompileInputs.cache
+C:\Users\Malcolm\Documents\CarrotMVVM\Carrot\Carrot.Core\obj\Debug\netstandard2.0\Carrot.Core.AssemblyInfoInputs.cache
+C:\Users\Malcolm\Documents\CarrotMVVM\Carrot\Carrot.Core\obj\Debug\netstandard2.0\Carrot.Core.AssemblyInfo.cs
+C:\Users\Malcolm\Documents\CarrotMVVM\Carrot\Carrot.Core\obj\Debug\netstandard2.0\Carrot.Core.dll
+C:\Users\Malcolm\Documents\CarrotMVVM\Carrot\Carrot.Core\obj\Debug\netstandard2.0\Carrot.Core.pdb

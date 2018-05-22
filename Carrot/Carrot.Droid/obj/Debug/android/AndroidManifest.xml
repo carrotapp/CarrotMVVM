@@ -12,10 +12,10 @@
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:label="@string/app_name" android:name="md5e1a1ed149b5ba5c673c1f4aafd6afc00.MainApplication" android:allowBackup="true" android:debuggable="true">
+  <application android:label="@string/app_name" android:name="md5a489e6cd471ebf0506ba4e2e67bd5d6a.MainApplication" android:allowBackup="true" android:debuggable="true">
     <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCqT5dDLPkGvbRNuaBABDDXj6Mzx3xO9_Q" />
     <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-    <activity android:label="Explore" android:name="md5f83c57f0627e15cbfd17bc983698a4cf.ExploreView">
+    <activity android:label="Explore" android:name="md5f50fb6122e5b33b3d40c8d0828542bff.ExploreView">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

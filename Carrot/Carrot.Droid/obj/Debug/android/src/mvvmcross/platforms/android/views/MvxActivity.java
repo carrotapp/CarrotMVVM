@@ -20,7 +20,7 @@ public abstract class MvxActivity
 			"n_onPause:()V:GetOnPauseHandler\n" +
 			"n_onStop:()V:GetOnStopHandler\n" +
 			"";
-		mono.android.Runtime.register ("MvvmCross.Platforms.Android.Views.MvxActivity, MvvmCross", MvxActivity.class, __md_methods);
+		mono.android.Runtime.register ("MvvmCross.Platforms.Android.Views.MvxActivity, MvvmCross, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null", MvxActivity.class, __md_methods);
 	}
 
 
@@ -28,7 +28,7 @@ public abstract class MvxActivity
 	{
 		super ();
 		if (getClass () == MvxActivity.class)
-			mono.android.TypeManager.Activate ("MvvmCross.Platforms.Android.Views.MvxActivity, MvvmCross", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("MvvmCross.Platforms.Android.Views.MvxActivity, MvvmCross, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

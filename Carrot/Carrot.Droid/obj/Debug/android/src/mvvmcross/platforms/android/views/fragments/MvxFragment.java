@@ -17,7 +17,7 @@ public class MvxFragment
 			"n_onPause:()V:GetOnPauseHandler\n" +
 			"n_onStop:()V:GetOnStopHandler\n" +
 			"";
-		mono.android.Runtime.register ("MvvmCross.Platforms.Android.Views.Fragments.MvxFragment, MvvmCross", MvxFragment.class, __md_methods);
+		mono.android.Runtime.register ("MvvmCross.Platforms.Android.Views.Fragments.MvxFragment, MvvmCross, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null", MvxFragment.class, __md_methods);
 	}
 
 
@@ -25,7 +25,7 @@ public class MvxFragment
 	{
 		super ();
 		if (getClass () == MvxFragment.class)
-			mono.android.TypeManager.Activate ("MvvmCross.Platforms.Android.Views.Fragments.MvxFragment, MvvmCross", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("MvvmCross.Platforms.Android.Views.Fragments.MvxFragment, MvvmCross, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

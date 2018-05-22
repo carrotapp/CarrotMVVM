@@ -23,7 +23,7 @@ public class MvxEventSourceFragment
 			"n_onDetach:()V:GetOnDetachHandler\n" +
 			"n_onSaveInstanceState:(Landroid/os/Bundle;)V:GetOnSaveInstanceState_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("MvvmCross.Platforms.Android.Views.Fragments.EventSource.MvxEventSourceFragment, MvvmCross", MvxEventSourceFragment.class, __md_methods);
+		mono.android.Runtime.register ("MvvmCross.Platforms.Android.Views.Fragments.EventSource.MvxEventSourceFragment, MvvmCross, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null", MvxEventSourceFragment.class, __md_methods);
 	}
 
 
@@ -31,7 +31,7 @@ public class MvxEventSourceFragment
 	{
 		super ();
 		if (getClass () == MvxEventSourceFragment.class)
-			mono.android.TypeManager.Activate ("MvvmCross.Platforms.Android.Views.Fragments.EventSource.MvxEventSourceFragment, MvvmCross", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("MvvmCross.Platforms.Android.Views.Fragments.EventSource.MvxEventSourceFragment, MvvmCross, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

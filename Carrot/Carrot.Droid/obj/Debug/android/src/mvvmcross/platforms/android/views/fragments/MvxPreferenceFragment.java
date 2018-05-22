@@ -17,7 +17,7 @@ public abstract class MvxPreferenceFragment
 			"n_onPause:()V:GetOnPauseHandler\n" +
 			"n_onStop:()V:GetOnStopHandler\n" +
 			"";
-		mono.android.Runtime.register ("MvvmCross.Platforms.Android.Views.Fragments.MvxPreferenceFragment, MvvmCross", MvxPreferenceFragment.class, __md_methods);
+		mono.android.Runtime.register ("MvvmCross.Platforms.Android.Views.Fragments.MvxPreferenceFragment, MvvmCross, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null", MvxPreferenceFragment.class, __md_methods);
 	}
 
 
@@ -25,7 +25,7 @@ public abstract class MvxPreferenceFragment
 	{
 		super ();
 		if (getClass () == MvxPreferenceFragment.class)
-			mono.android.TypeManager.Activate ("MvvmCross.Platforms.Android.Views.Fragments.MvxPreferenceFragment, MvvmCross", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("MvvmCross.Platforms.Android.Views.Fragments.MvxPreferenceFragment, MvvmCross, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

@@ -22,7 +22,7 @@ public abstract class MvxEventSourceActivity
 			"n_onActivityResult:(IILandroid/content/Intent;)V:GetOnActivityResult_IILandroid_content_Intent_Handler\n" +
 			"n_onSaveInstanceState:(Landroid/os/Bundle;)V:GetOnSaveInstanceState_Landroid_os_Bundle_Handler\n" +
 			"";
-		mono.android.Runtime.register ("MvvmCross.Platforms.Android.Views.Base.MvxEventSourceActivity, MvvmCross", MvxEventSourceActivity.class, __md_methods);
+		mono.android.Runtime.register ("MvvmCross.Platforms.Android.Views.Base.MvxEventSourceActivity, MvvmCross, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null", MvxEventSourceActivity.class, __md_methods);
 	}
 
 
@@ -30,7 +30,7 @@ public abstract class MvxEventSourceActivity
 	{
 		super ();
 		if (getClass () == MvxEventSourceActivity.class)
-			mono.android.TypeManager.Activate ("MvvmCross.Platforms.Android.Views.Base.MvxEventSourceActivity, MvvmCross", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("MvvmCross.Platforms.Android.Views.Base.MvxEventSourceActivity, MvvmCross, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

@@ -17,7 +17,7 @@ public abstract class MvxDialogFragment
 			"n_onPause:()V:GetOnPauseHandler\n" +
 			"n_onStop:()V:GetOnStopHandler\n" +
 			"";
-		mono.android.Runtime.register ("MvvmCross.Platforms.Android.Views.Fragments.MvxDialogFragment, MvvmCross", MvxDialogFragment.class, __md_methods);
+		mono.android.Runtime.register ("MvvmCross.Platforms.Android.Views.Fragments.MvxDialogFragment, MvvmCross, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null", MvxDialogFragment.class, __md_methods);
 	}
 
 
@@ -25,7 +25,7 @@ public abstract class MvxDialogFragment
 	{
 		super ();
 		if (getClass () == MvxDialogFragment.class)
-			mono.android.TypeManager.Activate ("MvvmCross.Platforms.Android.Views.Fragments.MvxDialogFragment, MvvmCross", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("MvvmCross.Platforms.Android.Views.Fragments.MvxDialogFragment, MvvmCross, Version=6.0.1.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

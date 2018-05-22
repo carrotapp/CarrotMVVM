@@ -281,24 +281,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ernst\\.nuget\\packages\\": {},
+    "C:\\Users\\Malcolm\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ernst\\Documents\\Bitbucket\\CarrotMVVM\\Carrot\\Carrot.Core\\Carrot.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Malcolm\\Documents\\CarrotMVVM\\Carrot\\Carrot.Core\\Carrot.Core.csproj",
       "projectName": "Carrot.Core",
-      "projectPath": "C:\\Users\\Ernst\\Documents\\Bitbucket\\CarrotMVVM\\Carrot\\Carrot.Core\\Carrot.Core.csproj",
-      "packagesPath": "C:\\Users\\Ernst\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ernst\\Documents\\Bitbucket\\CarrotMVVM\\Carrot\\Carrot.Core\\obj\\",
+      "projectPath": "C:\\Users\\Malcolm\\Documents\\CarrotMVVM\\Carrot\\Carrot.Core\\Carrot.Core.csproj",
+      "packagesPath": "C:\\Users\\Malcolm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Malcolm\\Documents\\CarrotMVVM\\Carrot\\Carrot.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ernst\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Malcolm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
