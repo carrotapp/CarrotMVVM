@@ -26,7 +26,8 @@ namespace Carrot.Droid.Views
                 GoogleMapOptions mapOptions = new GoogleMapOptions()
                     .InvokeMapType(GoogleMap.MapTypeSatellite)
                     .InvokeZoomControlsEnabled(false)
-                    .InvokeCompassEnabled(true);
+                    .InvokeCompassEnabled(true)
+                    ;
 
                 FragmentTransaction fragTx = FragmentManager.BeginTransaction();
                 _mapFragment = MapFragment.NewInstance(mapOptions);
@@ -49,7 +50,7 @@ namespace Carrot.Droid.Views
             //_map.MoveCamera(cameraUpdate);
 
             var options = new MarkerOptions();
-            Bitmap bmp = BitmapFactory.DecodeResource(Resources, Resource.Mipmap.carrot);
+            Bitmap bmp = BitmapFactory.DecodeResource(Resources, Resource.Drawable.mapIcon_50);
             options.SetIcon(BitmapDescriptorFactory.FromBitmap(bmp));
 
             options.SetPosition(new LatLng(0, 0));
