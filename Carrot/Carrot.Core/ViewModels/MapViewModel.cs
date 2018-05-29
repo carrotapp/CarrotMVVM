@@ -4,12 +4,14 @@ using Carrot.Core.Models.DTO;
 using Carrot.Core.Services.LocationService;
 using System.Diagnostics;
 using Carrot.Core.Helpers;
+using System.Threading.Tasks;
 
 namespace Carrot.Core.ViewModels
 {
     public class MapViewModel : MvxViewModel
     {
         private readonly MvxSubscriptionToken _token;
+        private readonly ILocationService _locationService;
 
         private double _lng;
         public double Lng {
@@ -31,6 +33,7 @@ namespace Carrot.Core.ViewModels
 
         public MapViewModel(ILocationService locationService, IMvxMessenger messenger)
         {
+            _locationService = locationService;
             _token = messenger.Subscribe<LocationMessage>(OnLocationMessage);
             var PreviousUserLocation = Settings.LocationSettings;
             UserLocation = new Location(PreviousUserLocation);
@@ -38,10 +41,14 @@ namespace Carrot.Core.ViewModels
 
         private void OnLocationMessage(LocationMessage locationMessage)
         {
-            Lat = locationMessage.Latitude;
-            Lng = locationMessage.Longitude;
-            UserLocation = new Location(Lat, Lng);
+            UserLocation = locationMessage.UserLocation;
             Settings.LocationSettings = UserLocation.ToString();
+        }
+
+        public async Task TestDB()
+        {
+            Debug.Print("Starting Mongo thing!!!");
+            await _locationService.PushUserLocationToDB(UserLocation);
         }
     }
 }

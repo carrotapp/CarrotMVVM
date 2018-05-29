@@ -1,16 +1,15 @@
-﻿using MvvmCross.Plugin.Messenger;
+﻿using Carrot.Core.ViewModels;
+using MvvmCross.Plugin.Messenger;
 
 namespace Carrot.Core.Models.DTO
 {
     public class LocationMessage: MvxMessage
     {
-        public double Latitude { get; private set; }
-        public double Longitude { get; private set; }
+        public Location UserLocation { get; private set; }
 
-        public LocationMessage(object sender, double lat, double lng): base(sender)
+        public LocationMessage(object sender, Location location): base(sender)
         {
-            Latitude = lat;
-            Longitude = lng;
+            UserLocation = location;
         }
 
     }

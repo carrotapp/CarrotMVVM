@@ -29,7 +29,7 @@
         fab:menu_labels_textSize="14sp"
         fab:menu_labels_cornerRadius="3dp"
         fab:menu_labels_colorNormal="@android:color/transparent"
-        fab:menu_labels_colorPressed="#36363636"
+        fab:menu_labels_colorPressed="@android:color/transparent"
         fab:menu_labels_colorRipple="@android:color/darker_gray"
         fab:menu_labels_singleLine="true"
         fab:menu_labels_ellipsize="none"

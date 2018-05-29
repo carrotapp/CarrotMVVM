@@ -1,7 +1,6 @@
-﻿using MvvmCross.Plugin.Location;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Carrot.Core.ViewModels;
+using MvvmCross.Plugin.Location;
+using System.Threading.Tasks;
 
 namespace Carrot.Core.Services.LocationService
 {
@@ -9,5 +8,6 @@ namespace Carrot.Core.Services.LocationService
     {
         void OnLocation(MvxGeoLocation location);
         void OnError(MvxLocationError error);
+        Task PushUserLocationToDB(Location location);
     }
 }

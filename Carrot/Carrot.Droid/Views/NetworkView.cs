@@ -5,6 +5,7 @@ using Android.OS;
 using Carrot.Core.ViewModels;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Views;
+using Clans.Fab;
 
 namespace Carrot.Droid.Views
 {
@@ -35,6 +36,12 @@ namespace Carrot.Droid.Views
                 fragTx.Commit();
             }
             _mapFragment.GetMapAsync(this);
+
+            var testButton = FindViewById<FloatingActionButton>(Resource.Id.filterMenuItem);
+            testButton.Click += async (s, e) =>
+            {
+                await ViewModel.TestDB();
+            };
         }
 
         public void OnMapReady(GoogleMap googleMap)
@@ -42,7 +49,7 @@ namespace Carrot.Droid.Views
             _map = googleMap;
 
             var options = new MarkerOptions();
-            options.SetPosition(new LatLng(ViewModel.Lat, ViewModel.Lng));
+            options.SetPosition(new LatLng(ViewModel.UserLocation.Lat, ViewModel.UserLocation.Lng));
             options.SetTitle("My location");
             _userLocation = _map.AddMarker(options);
 
