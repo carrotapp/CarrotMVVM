@@ -41,14 +41,6 @@ namespace Carrot.Droid.Views
         {
             _map = googleMap;
 
-            //CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
-            //builder.Target(new LatLng(ViewModel.Lat, ViewModel.Lng));
-            //builder.Zoom(18);
-            //CameraPosition cameraPosition = builder.Build();
-            //CameraUpdate cameraUpdate = CameraUpdateFactory.NewCameraPosition(cameraPosition);
-
-            //_map.MoveCamera(cameraUpdate);
-
             var options = new MarkerOptions();
             Bitmap bmp = BitmapFactory.DecodeResource(Resources, Resource.Drawable.mapIcon_50);
             options.SetIcon(BitmapDescriptorFactory.FromBitmap(bmp));
