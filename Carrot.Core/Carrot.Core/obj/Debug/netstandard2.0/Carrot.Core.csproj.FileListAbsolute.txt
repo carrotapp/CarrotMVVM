@@ -1,6 +1,0 @@
-C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot.Core\Carrot.Core\bin\Debug\netstandard2.0\Carrot.Core.deps.json
-C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot.Core\Carrot.Core\bin\Debug\netstandard2.0\Carrot.Core.dll
-C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot.Core\Carrot.Core\obj\Debug\netstandard2.0\Carrot.Core.csprojResolveAssemblyReference.cache
-C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot.Core\Carrot.Core\obj\Debug\netstandard2.0\Carrot.Core.csproj.CoreCompileInputs.cache
-C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot.Core\Carrot.Core\obj\Debug\netstandard2.0\Carrot.Core.AssemblyInfoInputs.cache
-C:\Users\Ernst\Documents\Bitbucket\CarrotMVVM\Carrot.Core\Carrot.Core\obj\Debug\netstandard2.0\Carrot.Core.AssemblyInfo.cs
