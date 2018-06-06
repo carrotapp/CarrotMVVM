@@ -38,10 +38,10 @@ namespace Carrot.Droid.Views
             _mapFragment.GetMapAsync(this);
 
             var testButton = FindViewById<FloatingActionButton>(Resource.Id.filterMenuItem);
-            testButton.Click += async (s, e) =>
-            {
-                await ViewModel.TestDB();
-            };
+            //testButton.Click += async (s, e) =>
+            //{
+            //    await ViewModel.TestDB();
+            //};
         }
 
         public void OnMapReady(GoogleMap googleMap)

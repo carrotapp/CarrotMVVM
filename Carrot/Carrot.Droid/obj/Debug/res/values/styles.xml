@@ -1,1 +1,0 @@
-<resources><style name="CarrotTheme" parent="android:Theme.Material.Light"><item name="android:colorPrimary">@color/customPrimary</item></style></resources>
