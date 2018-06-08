@@ -55,12 +55,12 @@ namespace Carrot.Droid.Views
         {
             _map = googleMap;
 
-            BitmapDescriptor bd = IconDrawableToBitmap("AB", 100, Color.Orange);
+            //BitmapDescriptor bd = IconDrawableToBitmap("AB", 100, Color.Orange);
 
             var options = new MarkerOptions();
             options.SetPosition(new LatLng(0, 0));
             options.SetTitle("My location");
-            options.SetIcon(bd);
+            options.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.my_location));
             _userLocation = _map.AddMarker(options);
 
             //var set = this.CreateBindingSet<NetworkView, MapViewModel>();
