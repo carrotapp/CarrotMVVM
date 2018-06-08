@@ -55,7 +55,7 @@ namespace Carrot.Droid.Views
         {
             _map = googleMap;
 
-            BitmapDescriptor bd = IconDrawableToBitmap("AB", 100);
+            BitmapDescriptor bd = IconDrawableToBitmap("AB", 100, Color.Orange);
 
             var options = new MarkerOptions();
             options.SetPosition(new LatLng(0, 0));
@@ -68,17 +68,18 @@ namespace Carrot.Droid.Views
             //set.Apply();
         }
 
-        private BitmapDescriptor IconDrawableToBitmap(string label, int size)
+        private BitmapDescriptor IconDrawableToBitmap(string label, int size, Color color)
         {
             icon = TextDrawable.TextDrawable.TextDrawbleBuilder
            .BeginConfig()
            .Height(size)
            .Width(size)
-           .BorderColor(Color.Orange)
+           .BorderColor(color)
+           .TextColor(color)
         .WithBorder(5)
            .FontSize(50)
            .EndConfig()
-           .BuildRound(label, Color.Green);
+           .BuildRound(label, Color.White);
 
             Canvas canvas = new Canvas();
             Bitmap bitmap = Bitmap.CreateBitmap(icon.IntrinsicWidth, icon.IntrinsicHeight, Bitmap.Config.Argb8888);
