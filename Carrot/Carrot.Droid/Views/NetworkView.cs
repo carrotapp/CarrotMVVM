@@ -7,6 +7,12 @@ using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Views;
 using Clans.Fab;
 
+using Android.Graphics.Drawables;
+using Android.Graphics;
+using Android.Content.Res;
+using Android.Content;
+using TextDrawable;
+
 namespace Carrot.Droid.Views
 {
     [Activity(Label = "Network", MainLauncher = true)]
@@ -14,6 +20,7 @@ namespace Carrot.Droid.Views
     {
         private MapFragment _mapFragment;
         private GoogleMap _map;
+        private TextDrawable.TextDrawable icon;
         private Marker _userLocation;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -26,8 +33,8 @@ namespace Carrot.Droid.Views
             if (_mapFragment == null)
             {
                 GoogleMapOptions mapOptions = new GoogleMapOptions()
-                    .InvokeMapType(GoogleMap.MapTypeNone)
-                    .InvokeZoomControlsEnabled(false)
+                    .InvokeMapType(GoogleMap.MapTypeNormal)
+                    .InvokeZoomControlsEnabled(true)
                     .InvokeCompassEnabled(true);
 
                 FragmentTransaction fragTx = FragmentManager.BeginTransaction();
@@ -48,14 +55,38 @@ namespace Carrot.Droid.Views
         {
             _map = googleMap;
 
+            BitmapDescriptor bd = IconDrawableToBitmap("AB", 100);
+
             var options = new MarkerOptions();
-            options.SetPosition(new LatLng(ViewModel.UserLocation.Lat, ViewModel.UserLocation.Lng));
+            options.SetPosition(new LatLng(0, 0));
             options.SetTitle("My location");
+            options.SetIcon(bd);
             _userLocation = _map.AddMarker(options);
 
-            var set = this.CreateBindingSet<NetworkView, MapViewModel>();
-            set.Bind(_userLocation).For(m => m.Position).To(vm => vm.UserLocation).WithConversion(new LocationToLatLngValueConverter(), null);
-            set.Apply();
+            //var set = this.CreateBindingSet<NetworkView, MapViewModel>();
+            //set.Bind(_userLocation).For(m => m.Position).To(vm => vm.UserLocation).WithConversion(new LocationToLatLngValueConverter(), null);
+            //set.Apply();
+        }
+
+        private BitmapDescriptor IconDrawableToBitmap(string label, int size)
+        {
+            icon = TextDrawable.TextDrawable.TextDrawbleBuilder
+           .BeginConfig()
+           .Height(size)
+           .Width(size)
+           .BorderColor(Color.Orange)
+        .WithBorder(5)
+           .FontSize(50)
+           .EndConfig()
+           .BuildRound(label, Color.Green);
+
+            Canvas canvas = new Canvas();
+            Bitmap bitmap = Bitmap.CreateBitmap(icon.IntrinsicWidth, icon.IntrinsicHeight, Bitmap.Config.Argb8888);
+            canvas.SetBitmap(bitmap);
+            icon.SetBounds(0, 0, canvas.Width, canvas.Height);
+            icon.Draw(canvas);
+            BitmapDescriptor bd = BitmapDescriptorFactory.FromBitmap(bitmap);
+            return bd;
         }
     }
 }
