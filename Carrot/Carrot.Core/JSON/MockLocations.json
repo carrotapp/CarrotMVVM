@@ -1,0 +1,29 @@
+﻿{
+  "locations": [
+    {
+      "coords": "-33.903630:18.420529",
+      "name": "V&A Waterfront",
+      "colour": "#F8F8F8"
+    },
+    {
+      "coords": "-33.892864:18.511172",
+      "name": "Canal Walk Shopping Centre",
+      "colour": "#000000"
+    },
+    {
+      "coords": "-33.980358:18.463796",
+      "name": "Cavendish Square",
+      "colour": "#474747"
+    },
+    {
+      "coords": "-33.929470:18.410710",
+      "name": "Woolworths Kloof Street",
+      "colour": "#c3e302"
+    },
+    {
+      "coords": "-33.928139:18.412330",
+      "name": "Kwik Spar",
+      "colour": "#c51b36"
+    }
+  ]
+}
