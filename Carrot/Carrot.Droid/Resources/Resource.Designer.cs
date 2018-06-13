@@ -418,8 +418,8 @@ namespace Carrot.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f070010
-			public const int common_google_signin_btn_text_dark = 2131165200;
+			// aapt resource value: 0x7f070011
+			public const int common_google_signin_btn_text_dark = 2131165201;
 			
 			// aapt resource value: 0x7f070000
 			public const int common_google_signin_btn_text_dark_default = 2131165184;
@@ -433,8 +433,8 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f070003
 			public const int common_google_signin_btn_text_dark_pressed = 2131165187;
 			
-			// aapt resource value: 0x7f070011
-			public const int common_google_signin_btn_text_light = 2131165201;
+			// aapt resource value: 0x7f070012
+			public const int common_google_signin_btn_text_light = 2131165202;
 			
 			// aapt resource value: 0x7f070004
 			public const int common_google_signin_btn_text_light_default = 2131165188;
@@ -448,11 +448,14 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f070007
 			public const int common_google_signin_btn_text_light_pressed = 2131165191;
 			
-			// aapt resource value: 0x7f070012
-			public const int common_google_signin_btn_tint = 2131165202;
+			// aapt resource value: 0x7f070013
+			public const int common_google_signin_btn_tint = 2131165203;
 			
 			// aapt resource value: 0x7f07000f
 			public const int customPrimary = 2131165199;
+			
+			// aapt resource value: 0x7f070010
+			public const int customSecondary = 2131165200;
 			
 			// aapt resource value: 0x7f07000b
 			public const int notification_action_color_filter = 2131165195;

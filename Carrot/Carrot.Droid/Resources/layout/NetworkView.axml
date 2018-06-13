@@ -16,7 +16,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginRight="8dp"
         android:src="@drawable/location_icon"
-        fab:fab_colorNormal="#69F0AE"
+        fab:fab_colorNormal="@color/customSecondary"
         fab:fab_colorPressed="#7dd8ac"
         fab:fab_colorRipple="#94fcc9" />
 <!--<com.github.clans.fab.FloatingActionMenu
