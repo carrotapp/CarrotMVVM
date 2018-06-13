@@ -8,7 +8,7 @@ using MvvmCross.Platforms.Android.Views;
 
 namespace Carrot.Droid.Views
 {
-    [Activity(MainLauncher = true)]
+    [Activity(MainLauncher = true, Theme = "@android:style/Theme.NoTitleBar")]
     public class NetworkView : MvxActivity<MapViewModel>, IOnMapReadyCallback
     {
         private MapFragment _mapFragment;
