@@ -640,46 +640,49 @@ namespace Carrot.Droid
 			public const int googleg_standard_color_18 = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int nearby_icon = 2130837527;
+			public const int location_icon = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int notification_action_background = 2130837528;
+			public const int nearby_icon = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int notification_bg = 2130837529;
+			public const int notification_action_background = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int notification_bg_low = 2130837530;
+			public const int notification_bg = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int notification_bg_low_normal = 2130837531;
+			public const int notification_bg_low = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int notification_bg_low_pressed = 2130837532;
+			public const int notification_bg_low_normal = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int notification_bg_normal = 2130837533;
+			public const int notification_bg_low_pressed = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int notification_bg_normal_pressed = 2130837534;
+			public const int notification_bg_normal = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int notification_icon_background = 2130837535;
-			
-			// aapt resource value: 0x7f020023
-			public const int notification_template_icon_bg = 2130837539;
-			
-			// aapt resource value: 0x7f020024
-			public const int notification_template_icon_low_bg = 2130837540;
+			public const int notification_bg_normal_pressed = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int notification_tile_bg = 2130837536;
+			public const int notification_icon_background = 2130837536;
+			
+			// aapt resource value: 0x7f020024
+			public const int notification_template_icon_bg = 2130837540;
+			
+			// aapt resource value: 0x7f020025
+			public const int notification_template_icon_low_bg = 2130837541;
 			
 			// aapt resource value: 0x7f020021
-			public const int notify_panel_notification_icon_bg = 2130837537;
+			public const int notification_tile_bg = 2130837537;
 			
 			// aapt resource value: 0x7f020022
-			public const int plus_icon = 2130837538;
+			public const int notify_panel_notification_icon_bg = 2130837538;
+			
+			// aapt resource value: 0x7f020023
+			public const int plus_icon = 2130837539;
 			
 			static Drawable()
 			{
@@ -700,23 +703,23 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b0006
 			public const int MvxBindingTagUnique = 2131427334;
 			
-			// aapt resource value: 0x7f0b0029
-			public const int action0 = 2131427369;
+			// aapt resource value: 0x7f0b0027
+			public const int action0 = 2131427367;
+			
+			// aapt resource value: 0x7f0b0024
+			public const int action_container = 2131427364;
+			
+			// aapt resource value: 0x7f0b002b
+			public const int action_divider = 2131427371;
+			
+			// aapt resource value: 0x7f0b0025
+			public const int action_image = 2131427365;
 			
 			// aapt resource value: 0x7f0b0026
-			public const int action_container = 2131427366;
+			public const int action_text = 2131427366;
 			
-			// aapt resource value: 0x7f0b002d
-			public const int action_divider = 2131427373;
-			
-			// aapt resource value: 0x7f0b0027
-			public const int action_image = 2131427367;
-			
-			// aapt resource value: 0x7f0b0028
-			public const int action_text = 2131427368;
-			
-			// aapt resource value: 0x7f0b0037
-			public const int actions = 2131427383;
+			// aapt resource value: 0x7f0b0035
+			public const int actions = 2131427381;
 			
 			// aapt resource value: 0x7f0b000d
 			public const int adjust_height = 2131427341;
@@ -733,11 +736,14 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b0016
 			public const int blocking = 2131427350;
 			
-			// aapt resource value: 0x7f0b002a
-			public const int cancel_action = 2131427370;
+			// aapt resource value: 0x7f0b0028
+			public const int cancel_action = 2131427368;
 			
-			// aapt resource value: 0x7f0b0032
-			public const int chronometer = 2131427378;
+			// aapt resource value: 0x7f0b0023
+			public const int checkInFab = 2131427363;
+			
+			// aapt resource value: 0x7f0b0030
+			public const int chronometer = 2131427376;
 			
 			// aapt resource value: 0x7f0b0013
 			public const int dark = 2131427347;
@@ -748,17 +754,11 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b001c
 			public const int end = 2131427356;
 			
-			// aapt resource value: 0x7f0b0039
-			public const int end_padder = 2131427385;
-			
-			// aapt resource value: 0x7f0b0023
-			public const int fabMenu = 2131427363;
+			// aapt resource value: 0x7f0b0037
+			public const int end_padder = 2131427383;
 			
 			// aapt resource value: 0x7f0b0007
 			public const int fab_label = 2131427335;
-			
-			// aapt resource value: 0x7f0b0024
-			public const int filterMenuItem = 2131427364;
 			
 			// aapt resource value: 0x7f0b0017
 			public const int forever = 2131427351;
@@ -766,17 +766,17 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b0008
 			public const int hybrid = 2131427336;
 			
-			// aapt resource value: 0x7f0b0034
-			public const int icon = 2131427380;
+			// aapt resource value: 0x7f0b0032
+			public const int icon = 2131427378;
 			
-			// aapt resource value: 0x7f0b0038
-			public const int icon_group = 2131427384;
+			// aapt resource value: 0x7f0b0036
+			public const int icon_group = 2131427382;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int icon_only = 2131427343;
 			
-			// aapt resource value: 0x7f0b0033
-			public const int info = 2131427379;
+			// aapt resource value: 0x7f0b0031
+			public const int info = 2131427377;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int italic = 2131427352;
@@ -799,8 +799,8 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b001d
 			public const int marquee = 2131427357;
 			
-			// aapt resource value: 0x7f0b002c
-			public const int media_actions = 2131427372;
+			// aapt resource value: 0x7f0b002a
+			public const int media_actions = 2131427370;
 			
 			// aapt resource value: 0x7f0b001e
 			public const int middle = 2131427358;
@@ -814,26 +814,23 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b000a
 			public const int normal = 2131427338;
 			
-			// aapt resource value: 0x7f0b0036
-			public const int notification_background = 2131427382;
+			// aapt resource value: 0x7f0b0034
+			public const int notification_background = 2131427380;
 			
-			// aapt resource value: 0x7f0b002f
-			public const int notification_main_column = 2131427375;
+			// aapt resource value: 0x7f0b002d
+			public const int notification_main_column = 2131427373;
 			
-			// aapt resource value: 0x7f0b002e
-			public const int notification_main_column_container = 2131427374;
-			
-			// aapt resource value: 0x7f0b0025
-			public const int placesNearbyMenuItem = 2131427365;
+			// aapt resource value: 0x7f0b002c
+			public const int notification_main_column_container = 2131427372;
 			
 			// aapt resource value: 0x7f0b001b
 			public const int right = 2131427355;
 			
-			// aapt resource value: 0x7f0b0035
-			public const int right_icon = 2131427381;
+			// aapt resource value: 0x7f0b0033
+			public const int right_icon = 2131427379;
 			
-			// aapt resource value: 0x7f0b0030
-			public const int right_side = 2131427376;
+			// aapt resource value: 0x7f0b002e
+			public const int right_side = 2131427374;
 			
 			// aapt resource value: 0x7f0b000b
 			public const int satellite = 2131427339;
@@ -844,8 +841,8 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b001f
 			public const int start = 2131427359;
 			
-			// aapt resource value: 0x7f0b002b
-			public const int status_bar_latest_event_content = 2131427371;
+			// aapt resource value: 0x7f0b0029
+			public const int status_bar_latest_event_content = 2131427369;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int terrain = 2131427340;
@@ -856,8 +853,8 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b0003
 			public const int text2 = 2131427331;
 			
-			// aapt resource value: 0x7f0b0031
-			public const int time = 2131427377;
+			// aapt resource value: 0x7f0b002f
+			public const int time = 2131427375;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int title = 2131427332;
