@@ -5,12 +5,10 @@ using Android.OS;
 using Carrot.Core.ViewModels;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Views;
-using Clans.Fab;
-using Carrot.Droid.ValueConverters;
 
 namespace Carrot.Droid.Views
 {
-    [Activity(Label = "Network")]
+    [Activity(MainLauncher = true, Theme = "@android:style/Theme.NoTitleBar")]
     public class NetworkView : MvxActivity<MapViewModel>, IOnMapReadyCallback
     {
         private MapFragment _mapFragment;
@@ -38,7 +36,7 @@ namespace Carrot.Droid.Views
             }
             _mapFragment.GetMapAsync(this);
 
-            var testButton = FindViewById<FloatingActionButton>(Resource.Id.filterMenuItem);
+            //var testButton = FindViewById<FloatingActionButton>(Resource.Id.filterMenuItem);
             //testButton.Click += async (s, e) =>
             //{
             //    await ViewModel.TestDB();
