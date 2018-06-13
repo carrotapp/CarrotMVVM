@@ -22,9 +22,9 @@ namespace Carrot.Core.Services.LocationService
             _messenger = messenger;
             MvxLocationOptions options = new MvxLocationOptions
             {
-                TimeBetweenUpdates = TimeSpan.FromSeconds(20)
+                TimeBetweenUpdates = TimeSpan.FromSeconds(10)
             };
-            watcher.Start(options, OnLocation, OnError);
+            _watcher.Start(options, OnLocation, OnError);
         }
 
         public void OnError(MvxLocationError error)
@@ -36,6 +36,7 @@ namespace Carrot.Core.Services.LocationService
         {
             Location userLocation = new Location(location.Coordinates.Latitude, location.Coordinates.Longitude);
             var message = new LocationMessage(this, userLocation);
+            Debug.Print("\n\nPopping you a message!");
             _messenger.Publish(message);
         }
 

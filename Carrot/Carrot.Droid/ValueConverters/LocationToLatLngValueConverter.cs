@@ -4,7 +4,7 @@ using Android.Gms.Maps.Model;
 using Carrot.Core.ViewModels;
 using MvvmCross.Converters;
 
-namespace Carrot.Droid.Views
+namespace Carrot.Droid.ValueConverters
 {
     public class LocationToLatLngValueConverter : MvxValueConverter<Location, LatLng>
     {

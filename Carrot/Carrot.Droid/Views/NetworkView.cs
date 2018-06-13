@@ -6,10 +6,11 @@ using Carrot.Core.ViewModels;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Views;
 using Clans.Fab;
+using Carrot.Droid.ValueConverters;
 
 namespace Carrot.Droid.Views
 {
-    [Activity(Label = "Network", MainLauncher = true)]
+    [Activity(Label = "Network")]
     public class NetworkView : MvxActivity<MapViewModel>, IOnMapReadyCallback
     {
         private MapFragment _mapFragment;
@@ -26,7 +27,7 @@ namespace Carrot.Droid.Views
             if (_mapFragment == null)
             {
                 GoogleMapOptions mapOptions = new GoogleMapOptions()
-                    .InvokeMapType(GoogleMap.MapTypeNone)
+                    .InvokeMapType(GoogleMap.MapTypeNormal)
                     .InvokeZoomControlsEnabled(false)
                     .InvokeCompassEnabled(true);
 

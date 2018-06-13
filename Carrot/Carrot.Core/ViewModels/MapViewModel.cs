@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Carrot.Core.ViewModels
 {
-    public class MapViewModel : MvxViewModel
+    public class MapViewModel : MvxViewModel<Location>
     {
         private readonly MvxSubscriptionToken _token;
         private readonly ILocationService _locationService;
@@ -37,6 +37,11 @@ namespace Carrot.Core.ViewModels
             _token = messenger.Subscribe<LocationMessage>(OnLocationMessage);
             var PreviousUserLocation = Settings.LocationSettings;
             UserLocation = new Location(PreviousUserLocation);
+        }
+
+        public override void Prepare(Location userLocation)
+        {
+            UserLocation = userLocation;
         }
 
         private void OnLocationMessage(LocationMessage locationMessage)
