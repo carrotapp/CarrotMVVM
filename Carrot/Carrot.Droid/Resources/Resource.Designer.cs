@@ -418,8 +418,8 @@ namespace Carrot.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f070010
-			public const int common_google_signin_btn_text_dark = 2131165200;
+			// aapt resource value: 0x7f070011
+			public const int common_google_signin_btn_text_dark = 2131165201;
 			
 			// aapt resource value: 0x7f070000
 			public const int common_google_signin_btn_text_dark_default = 2131165184;
@@ -433,8 +433,8 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f070003
 			public const int common_google_signin_btn_text_dark_pressed = 2131165187;
 			
-			// aapt resource value: 0x7f070011
-			public const int common_google_signin_btn_text_light = 2131165201;
+			// aapt resource value: 0x7f070012
+			public const int common_google_signin_btn_text_light = 2131165202;
 			
 			// aapt resource value: 0x7f070004
 			public const int common_google_signin_btn_text_light_default = 2131165188;
@@ -448,11 +448,14 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f070007
 			public const int common_google_signin_btn_text_light_pressed = 2131165191;
 			
-			// aapt resource value: 0x7f070012
-			public const int common_google_signin_btn_tint = 2131165202;
+			// aapt resource value: 0x7f070013
+			public const int common_google_signin_btn_tint = 2131165203;
 			
 			// aapt resource value: 0x7f07000f
 			public const int customPrimary = 2131165199;
+			
+			// aapt resource value: 0x7f070010
+			public const int customSecondary = 2131165200;
 			
 			// aapt resource value: 0x7f07000b
 			public const int notification_action_color_filter = 2131165195;
@@ -571,115 +574,121 @@ namespace Carrot.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int common_full_open_on_phone = 2130837504;
+			public const int CheckInFab = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int common_google_signin_btn_icon_dark = 2130837505;
+			public const int common_full_open_on_phone = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int common_google_signin_btn_icon_dark_focused = 2130837506;
+			public const int common_google_signin_btn_icon_dark = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int common_google_signin_btn_icon_dark_normal = 2130837507;
+			public const int common_google_signin_btn_icon_dark_focused = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int common_google_signin_btn_icon_dark_normal_background = 2130837508;
+			public const int common_google_signin_btn_icon_dark_normal = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int common_google_signin_btn_icon_disabled = 2130837509;
+			public const int common_google_signin_btn_icon_dark_normal_background = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int common_google_signin_btn_icon_light = 2130837510;
+			public const int common_google_signin_btn_icon_disabled = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int common_google_signin_btn_icon_light_focused = 2130837511;
+			public const int common_google_signin_btn_icon_light = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int common_google_signin_btn_icon_light_normal = 2130837512;
+			public const int common_google_signin_btn_icon_light_focused = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int common_google_signin_btn_icon_light_normal_background = 2130837513;
+			public const int common_google_signin_btn_icon_light_normal = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int common_google_signin_btn_text_dark = 2130837514;
+			public const int common_google_signin_btn_icon_light_normal_background = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int common_google_signin_btn_text_dark_focused = 2130837515;
+			public const int common_google_signin_btn_text_dark = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int common_google_signin_btn_text_dark_normal = 2130837516;
+			public const int common_google_signin_btn_text_dark_focused = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int common_google_signin_btn_text_dark_normal_background = 2130837517;
+			public const int common_google_signin_btn_text_dark_normal = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int common_google_signin_btn_text_disabled = 2130837518;
+			public const int common_google_signin_btn_text_dark_normal_background = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int common_google_signin_btn_text_light = 2130837519;
+			public const int common_google_signin_btn_text_disabled = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int common_google_signin_btn_text_light_focused = 2130837520;
+			public const int common_google_signin_btn_text_light = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int common_google_signin_btn_text_light_normal = 2130837521;
+			public const int common_google_signin_btn_text_light_focused = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int common_google_signin_btn_text_light_normal_background = 2130837522;
+			public const int common_google_signin_btn_text_light_normal = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int fab_add = 2130837523;
+			public const int common_google_signin_btn_text_light_normal_background = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int filter_icon = 2130837524;
+			public const int fab_add = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int googleg_disabled_color_18 = 2130837525;
+			public const int filter_icon = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int googleg_standard_color_18 = 2130837526;
+			public const int googleg_disabled_color_18 = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int nearby_icon = 2130837527;
+			public const int googleg_standard_color_18 = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int notification_action_background = 2130837528;
+			public const int location_icon = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int notification_bg = 2130837529;
+			public const int nearby_icon = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int notification_bg_low = 2130837530;
+			public const int notification_action_background = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int notification_bg_low_normal = 2130837531;
+			public const int notification_bg = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int notification_bg_low_pressed = 2130837532;
+			public const int notification_bg_low = 2130837532;
 			
 			// aapt resource value: 0x7f02001d
-			public const int notification_bg_normal = 2130837533;
+			public const int notification_bg_low_normal = 2130837533;
 			
 			// aapt resource value: 0x7f02001e
-			public const int notification_bg_normal_pressed = 2130837534;
+			public const int notification_bg_low_pressed = 2130837534;
 			
 			// aapt resource value: 0x7f02001f
-			public const int notification_icon_background = 2130837535;
-			
-			// aapt resource value: 0x7f020023
-			public const int notification_template_icon_bg = 2130837539;
-			
-			// aapt resource value: 0x7f020024
-			public const int notification_template_icon_low_bg = 2130837540;
+			public const int notification_bg_normal = 2130837535;
 			
 			// aapt resource value: 0x7f020020
-			public const int notification_tile_bg = 2130837536;
+			public const int notification_bg_normal_pressed = 2130837536;
 			
 			// aapt resource value: 0x7f020021
-			public const int notify_panel_notification_icon_bg = 2130837537;
+			public const int notification_icon_background = 2130837537;
+			
+			// aapt resource value: 0x7f020025
+			public const int notification_template_icon_bg = 2130837541;
+			
+			// aapt resource value: 0x7f020026
+			public const int notification_template_icon_low_bg = 2130837542;
 			
 			// aapt resource value: 0x7f020022
-			public const int plus_icon = 2130837538;
+			public const int notification_tile_bg = 2130837538;
+			
+			// aapt resource value: 0x7f020023
+			public const int notify_panel_notification_icon_bg = 2130837539;
+			
+			// aapt resource value: 0x7f020024
+			public const int plus_icon = 2130837540;
 			
 			static Drawable()
 			{
@@ -700,23 +709,23 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b0006
 			public const int MvxBindingTagUnique = 2131427334;
 			
-			// aapt resource value: 0x7f0b0029
-			public const int action0 = 2131427369;
-			
 			// aapt resource value: 0x7f0b0026
-			public const int action_container = 2131427366;
+			public const int action0 = 2131427366;
 			
-			// aapt resource value: 0x7f0b002d
-			public const int action_divider = 2131427373;
+			// aapt resource value: 0x7f0b0023
+			public const int action_container = 2131427363;
 			
-			// aapt resource value: 0x7f0b0027
-			public const int action_image = 2131427367;
+			// aapt resource value: 0x7f0b002a
+			public const int action_divider = 2131427370;
 			
-			// aapt resource value: 0x7f0b0028
-			public const int action_text = 2131427368;
+			// aapt resource value: 0x7f0b0024
+			public const int action_image = 2131427364;
 			
-			// aapt resource value: 0x7f0b0037
-			public const int actions = 2131427383;
+			// aapt resource value: 0x7f0b0025
+			public const int action_text = 2131427365;
+			
+			// aapt resource value: 0x7f0b0034
+			public const int actions = 2131427380;
 			
 			// aapt resource value: 0x7f0b000d
 			public const int adjust_height = 2131427341;
@@ -733,11 +742,14 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b0016
 			public const int blocking = 2131427350;
 			
-			// aapt resource value: 0x7f0b002a
-			public const int cancel_action = 2131427370;
+			// aapt resource value: 0x7f0b0027
+			public const int cancel_action = 2131427367;
 			
-			// aapt resource value: 0x7f0b0032
-			public const int chronometer = 2131427378;
+			// aapt resource value: 0x7f0b0037
+			public const int checkInFab = 2131427383;
+			
+			// aapt resource value: 0x7f0b002f
+			public const int chronometer = 2131427375;
 			
 			// aapt resource value: 0x7f0b0013
 			public const int dark = 2131427347;
@@ -748,17 +760,11 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b001c
 			public const int end = 2131427356;
 			
-			// aapt resource value: 0x7f0b0039
-			public const int end_padder = 2131427385;
-			
-			// aapt resource value: 0x7f0b0023
-			public const int fabMenu = 2131427363;
+			// aapt resource value: 0x7f0b0036
+			public const int end_padder = 2131427382;
 			
 			// aapt resource value: 0x7f0b0007
 			public const int fab_label = 2131427335;
-			
-			// aapt resource value: 0x7f0b0024
-			public const int filterMenuItem = 2131427364;
 			
 			// aapt resource value: 0x7f0b0017
 			public const int forever = 2131427351;
@@ -766,17 +772,17 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b0008
 			public const int hybrid = 2131427336;
 			
-			// aapt resource value: 0x7f0b0034
-			public const int icon = 2131427380;
+			// aapt resource value: 0x7f0b0031
+			public const int icon = 2131427377;
 			
-			// aapt resource value: 0x7f0b0038
-			public const int icon_group = 2131427384;
+			// aapt resource value: 0x7f0b0035
+			public const int icon_group = 2131427381;
 			
 			// aapt resource value: 0x7f0b000f
 			public const int icon_only = 2131427343;
 			
-			// aapt resource value: 0x7f0b0033
-			public const int info = 2131427379;
+			// aapt resource value: 0x7f0b0030
+			public const int info = 2131427376;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int italic = 2131427352;
@@ -799,8 +805,8 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b001d
 			public const int marquee = 2131427357;
 			
-			// aapt resource value: 0x7f0b002c
-			public const int media_actions = 2131427372;
+			// aapt resource value: 0x7f0b0029
+			public const int media_actions = 2131427369;
 			
 			// aapt resource value: 0x7f0b001e
 			public const int middle = 2131427358;
@@ -814,26 +820,23 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b000a
 			public const int normal = 2131427338;
 			
-			// aapt resource value: 0x7f0b0036
-			public const int notification_background = 2131427382;
+			// aapt resource value: 0x7f0b0033
+			public const int notification_background = 2131427379;
 			
-			// aapt resource value: 0x7f0b002f
-			public const int notification_main_column = 2131427375;
+			// aapt resource value: 0x7f0b002c
+			public const int notification_main_column = 2131427372;
 			
-			// aapt resource value: 0x7f0b002e
-			public const int notification_main_column_container = 2131427374;
-			
-			// aapt resource value: 0x7f0b0025
-			public const int placesNearbyMenuItem = 2131427365;
+			// aapt resource value: 0x7f0b002b
+			public const int notification_main_column_container = 2131427371;
 			
 			// aapt resource value: 0x7f0b001b
 			public const int right = 2131427355;
 			
-			// aapt resource value: 0x7f0b0035
-			public const int right_icon = 2131427381;
+			// aapt resource value: 0x7f0b0032
+			public const int right_icon = 2131427378;
 			
-			// aapt resource value: 0x7f0b0030
-			public const int right_side = 2131427376;
+			// aapt resource value: 0x7f0b002d
+			public const int right_side = 2131427373;
 			
 			// aapt resource value: 0x7f0b000b
 			public const int satellite = 2131427339;
@@ -844,8 +847,8 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b001f
 			public const int start = 2131427359;
 			
-			// aapt resource value: 0x7f0b002b
-			public const int status_bar_latest_event_content = 2131427371;
+			// aapt resource value: 0x7f0b0028
+			public const int status_bar_latest_event_content = 2131427368;
 			
 			// aapt resource value: 0x7f0b000c
 			public const int terrain = 2131427340;
@@ -856,8 +859,8 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f0b0003
 			public const int text2 = 2131427331;
 			
-			// aapt resource value: 0x7f0b0031
-			public const int time = 2131427377;
+			// aapt resource value: 0x7f0b002e
+			public const int time = 2131427374;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int title = 2131427332;
