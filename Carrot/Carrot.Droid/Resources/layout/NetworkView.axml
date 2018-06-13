@@ -8,7 +8,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         class="com.google.android.gms.maps.MapFragment" />
-    <com.github.clans.fab.FloatingActionButton
+    <include
+        layout="@drawable/CheckInFab" />
+<!--<com.github.clans.fab.FloatingActionButton
         android:id="@+id/checkInFab"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,7 +20,7 @@
         android:src="@drawable/location_icon"
         fab:fab_colorNormal="@color/customSecondary"
         fab:fab_colorPressed="#7dd8ac"
-        fab:fab_colorRipple="#94fcc9" />
+        fab:fab_colorRipple="#94fcc9" />-->
 <!--<com.github.clans.fab.FloatingActionMenu
         android:id="@+id/fabMenu"
         fab:menu_icon="@drawable/plus_icon"
