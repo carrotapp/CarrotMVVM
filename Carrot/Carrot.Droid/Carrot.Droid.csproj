@@ -140,6 +140,7 @@
     <Compile Include="MainApplication.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\LoadingScreenView.cs" />
     <Compile Include="Views\NetworkView.cs" />
     <Compile Include="ValueConverters\LocationToLatLngValueConverter.cs" />
     <Compile Include="Views\SplashScreenActivity.cs" />

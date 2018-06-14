@@ -2,25 +2,25 @@
 using Carrot.Core.Models.DTO;
 using Carrot.Core.Services.LocationService;
 using Carrot.Core.ViewModels;
+using MvvmCross;
 using MvvmCross.Navigation;
 using MvvmCross.Plugin.Messenger;
 using MvvmCross.ViewModels;
+using System;
 using System.Diagnostics;
 
 namespace Carrot.Core
 {
-    public class AppStart: MvxAppStart
+    public class AppStart : MvxAppStart
     {
         ILocationService _locationService;
         IMvxNavigationService _navigationService;
-        private MvxSubscriptionToken _token;
-        private IMvxMessenger _messenger;
+        private readonly MvxSubscriptionToken _token;
         private Location _userLocation = new Location(Settings.LocationSettings);
 
-        public AppStart(IMvxApplication application, ILocationService locationService, IMvxNavigationService navigationService, IMvxMessenger messenger) : base(application)
+        public AppStart(IMvxApplication application, IMvxNavigationService navigationService, IMvxMessenger messenger) : base(application)
         {
-            _messenger = messenger;
-            _locationService = locationService;
+            _token = messenger.Subscribe<LocationMessage>(OnLocationMessage);
             _navigationService = navigationService;
         }
 
@@ -28,22 +28,28 @@ namespace Carrot.Core
         {
             var PreviousUserLocation = Settings.LocationSettings;
             _userLocation = new Location(PreviousUserLocation);
-            Debug.Print(_userLocation.ToString());
-            if (!_userLocation.ToString().Equals("0:0"))
+            Debug.WriteLine(_userLocation.ToString());
+            if (_userLocation.ToString().Equals("0:0"))
             {
                 await _navigationService.Navigate<MapViewModel, Location>(_userLocation);
             }
             else
             {
-                Debug.Print("Hit the else!");
-                _token = _messenger.Subscribe<LocationMessage>(OnLocationMessage);
+                try
+                {
+                    _locationService = Mvx.Resolve<LocationService>();
+
+                }
+                catch (Exception e)
+                {
+                    Debug.WriteLine(e.Message);
+                }
             }
-            
         }
 
         private async void OnLocationMessage(LocationMessage locationMessage)
         {
-            Debug.Print("\n\nGot this bitch's location!");
+            Debug.WriteLine("\n\nGot the location!");
             _userLocation = locationMessage.UserLocation;
             Settings.LocationSettings = _userLocation.ToString();
             await _navigationService.Navigate<MapViewModel, Location>(_userLocation);

@@ -3,12 +3,13 @@ using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using Android.OS;
 using Carrot.Core.ViewModels;
+using Carrot.Droid.ValueConverters;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Views;
 
 namespace Carrot.Droid.Views
 {
-    [Activity(MainLauncher = true, Theme = "@android:style/Theme.NoTitleBar")]
+    [Activity(Theme = "@android:style/Theme.NoTitleBar")]
     public class NetworkView : MvxActivity<MapViewModel>, IOnMapReadyCallback
     {
         private MapFragment _mapFragment;

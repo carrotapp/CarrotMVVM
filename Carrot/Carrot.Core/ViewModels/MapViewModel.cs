@@ -52,7 +52,6 @@ namespace Carrot.Core.ViewModels
 
         public async Task TestDB()
         {
-            Debug.Print("Starting Mongo thing!!!");
             await _locationService.PushUserLocationToDB(UserLocation);
         }
     }

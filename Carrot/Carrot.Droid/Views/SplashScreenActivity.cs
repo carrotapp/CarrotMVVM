@@ -13,7 +13,7 @@ using MvvmCross.Platforms.Android.Views;
 
 namespace Carrot.Droid.Views
 {
-    [Activity(Label = "Carrot", MainLauncher = true, NoHistory = true, Icon = "@drawable/food")]
+    [Activity(MainLauncher = true, NoHistory = true, Icon = "@drawable/location_icon")]
     public class SplashScreenActivity : MvxSplashScreenActivity
     {
         public SplashScreenActivity() : base(Resource.Layout.SplashScreen)
