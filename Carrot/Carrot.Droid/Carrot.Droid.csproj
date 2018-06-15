@@ -75,8 +75,11 @@
       <HintPath>..\packages\MongoDB.Driver.Core.2.6.1\lib\netstandard1.5\MongoDB.Driver.Core.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android.Export" />
-    <Reference Include="MvvmCross, Version=6.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MvvmCross.6.0.1\lib\monoandroid81\MvvmCross.dll</HintPath>
+    <Reference Include="MvvmCross, Version=6.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.6.1.1\lib\monoandroid81\MvvmCross.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugin.Color, Version=6.1.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmCross.Plugin.Color.6.1.1\lib\monoandroid81\MvvmCross.Plugin.Color.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Plugin.Location, Version=6.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmCross.Plugin.Location.6.0.1\lib\monoandroid81\MvvmCross.Plugin.Location.dll</HintPath>

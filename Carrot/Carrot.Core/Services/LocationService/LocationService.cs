@@ -59,48 +59,6 @@ namespace Carrot.Core.Services.LocationService
 
         public List<Place> GetMock()
         {
-            //            string mock_places = @"{
-            //  'locations': [
-            //    {
-            //      'coords': ' - 33.903630:18.420529',
-            //      'name': 'V &A Waterfront',
-            //      'colour': '#F8F8F8'
-            //    },
-            //    {
-            //      'coords': ' - 33.892864:18.511172',
-            //      'name': 'Canal Walk Shopping Centre',
-            //      'colour': '#000000'
-            //    },
-            //    {
-            //      'coords': '-33.980358:18.463796',
-            //      'name': 'Cavendish Square',
-            //      'colour': '#474747'
-            //    },
-            //    {
-            //      'coords': '-33.929470:18.410710',
-            //      'name': 'Woolworths Kloof Street',
-            //      'colour':'#c3e302'
-            //    },
-            //    {
-            //      'coords': '-33.928139:18.412330',
-            //      'name': 'Kwik Spar',
-            //      'colour': '#c51b36'
-            //    }
-            //  ]
-            //}";
-
-            //            JsonTextReader reader = new JsonTextReader(new StringReader(mock_places));
-            //            while (reader.Read())
-            //            {
-            //                if (reader.Value != null)
-            //                {
-            //                    Console.WriteLine("Token: {0}, Value: {1}", reader.TokenType, reader.Value);
-            //                }
-            //                else
-            //                {
-            //                    Console.WriteLine("Token: {0}", reader.TokenType);
-            //                }
-            //            }
             var response = new PlaceResponse
             {
                 Places = new List<Place>()
@@ -112,7 +70,6 @@ namespace Carrot.Core.Services.LocationService
 
             foreach (string file in streams)
             {
-                Console.WriteLine("FILE " + file);
                 if (file.EndsWith("MockLocations.json"))
                 {
                     Stream stream = assembly.GetManifestResourceStream(file);
@@ -124,7 +81,7 @@ namespace Carrot.Core.Services.LocationService
                 }
             }
             places = response.Places;
-            Console.WriteLine(response.Places.Count);
+
             return places;
         }
     }

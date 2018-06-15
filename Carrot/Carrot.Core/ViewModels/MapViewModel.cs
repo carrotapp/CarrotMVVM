@@ -58,12 +58,9 @@ namespace Carrot.Core.ViewModels
             await _locationService.PushUserLocationToDB(UserLocation);
         }
 
-        public void DisplayMock()
+        public List<Place> DisplayMock()
         {
-            System.Console.WriteLine("MOCK_DATA");
-            var places = _locationService.GetMock();
-            //_locationService.GetMock();
-            System.Console.WriteLine(places[0].Name);
+            return _locationService.GetMock();
         }
     }
 }
