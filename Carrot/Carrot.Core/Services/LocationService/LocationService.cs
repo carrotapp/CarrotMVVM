@@ -8,6 +8,11 @@ using MvvmCross.Plugin.Messenger;
 using Carrot.Core.Helpers;
 using MongoDB.Bson;
 using System.Threading.Tasks;
+using System.IO;
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using Carrot.Core.Models.Responses;
+using Newtonsoft.Json.Linq;
 
 namespace Carrot.Core.Services.LocationService
 {
@@ -50,6 +55,77 @@ namespace Carrot.Core.Services.LocationService
             await database.GetCollection<BsonDocument>("test").InsertOneAsync(doc);
             var count = await database.GetCollection<BsonDocument>("test").CountAsync(new BsonDocument());
             Debug.Print("Count: " + count);
+        }
+
+        public List<Place> GetMock()
+        {
+            //            string mock_places = @"{
+            //  'locations': [
+            //    {
+            //      'coords': ' - 33.903630:18.420529',
+            //      'name': 'V &A Waterfront',
+            //      'colour': '#F8F8F8'
+            //    },
+            //    {
+            //      'coords': ' - 33.892864:18.511172',
+            //      'name': 'Canal Walk Shopping Centre',
+            //      'colour': '#000000'
+            //    },
+            //    {
+            //      'coords': '-33.980358:18.463796',
+            //      'name': 'Cavendish Square',
+            //      'colour': '#474747'
+            //    },
+            //    {
+            //      'coords': '-33.929470:18.410710',
+            //      'name': 'Woolworths Kloof Street',
+            //      'colour':'#c3e302'
+            //    },
+            //    {
+            //      'coords': '-33.928139:18.412330',
+            //      'name': 'Kwik Spar',
+            //      'colour': '#c51b36'
+            //    }
+            //  ]
+            //}";
+
+            //            JsonTextReader reader = new JsonTextReader(new StringReader(mock_places));
+            //            while (reader.Read())
+            //            {
+            //                if (reader.Value != null)
+            //                {
+            //                    Console.WriteLine("Token: {0}, Value: {1}", reader.TokenType, reader.Value);
+            //                }
+            //                else
+            //                {
+            //                    Console.WriteLine("Token: {0}", reader.TokenType);
+            //                }
+            //            }
+            var response = new PlaceResponse
+            {
+                Places = new List<Place>()
+            };
+
+            List<Place> places = new List<Place>();
+            var assembly = typeof(App).Assembly;
+            string[] streams = assembly.GetManifestResourceNames();
+
+            foreach (string file in streams)
+            {
+                Console.WriteLine("FILE " + file);
+                if (file.EndsWith("MockLocations.json"))
+                {
+                    Stream stream = assembly.GetManifestResourceStream(file);
+                    using (StreamReader streamReader = new StreamReader(stream))
+                    {
+                        response = (PlaceResponse)JsonConvert.DeserializeObject(streamReader.ReadToEnd(), typeof(PlaceResponse));
+                    }
+                    break;
+                }
+            }
+            places = response.Places;
+            Console.WriteLine(response.Places.Count);
+            return places;
         }
     }
 }

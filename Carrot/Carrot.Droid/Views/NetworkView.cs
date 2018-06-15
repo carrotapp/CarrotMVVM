@@ -11,6 +11,8 @@ using Android.Graphics;
 using Android.Content.Res;
 using Android.Content;
 using TextDrawable;
+using Clans.Fab;
+using System;
 
 namespace Carrot.Droid.Views
 {
@@ -43,11 +45,19 @@ namespace Carrot.Droid.Views
             }
             _mapFragment.GetMapAsync(this);
 
-            //var testButton = FindViewById<FloatingActionButton>(Resource.Id.filterMenuItem);
-            //testButton.Click += async (s, e) =>
-            //{
-            //    await ViewModel.TestDB();
-            //};
+            var testButton = FindViewById<FloatingActionButton>(Resource.Id.checkInFab);
+
+            testButton.Click += (s, e) =>
+           {
+               try
+               {
+                   Test();
+               }
+               catch (System.Exception er)
+               {
+                   System.Console.WriteLine(er.Message); ;
+               }
+           };
         }
 
         public void OnMapReady(GoogleMap googleMap)
@@ -87,6 +97,11 @@ namespace Carrot.Droid.Views
             icon.Draw(canvas);
             BitmapDescriptor bd = BitmapDescriptorFactory.FromBitmap(bitmap);
             return bd;
+        }
+
+        private void Test()
+        {
+            ViewModel.DisplayMock();
         }
     }
 }
