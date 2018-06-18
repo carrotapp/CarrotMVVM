@@ -10,9 +10,7 @@ namespace Carrot.Core
         public override void Initialize()
         {
             Mvx.LazyConstructAndRegisterSingleton<ILocationService, LocationService>();
-            //Mvx.ConstructAndRegisterSingleton<IMvxAppStart, AppStart>();
-            //RegisterCustomAppStart<AppStart>();
-            RegisterAppStart<LoadingViewModel>();
+            RegisterAppStart<MapViewModel> ();
         }
     }
 }

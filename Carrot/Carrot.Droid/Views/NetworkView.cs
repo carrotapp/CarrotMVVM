@@ -3,25 +3,29 @@ using Android.Gms.Maps;
 using Android.Gms.Maps.Model;
 using Android.OS;
 using Carrot.Core.ViewModels;
+using Carrot.Droid.Services;
 using Carrot.Droid.ValueConverters;
 using MvvmCross.Binding.BindingContext;
 using MvvmCross.Platforms.Android.Views;
 
 namespace Carrot.Droid.Views
 {
-    [Activity(Theme = "@android:style/Theme.NoTitleBar")]
+    [Activity(MainLauncher = true, Theme = "@android:style/Theme.NoTitleBar")]
     public class NetworkView : MvxActivity<MapViewModel>, IOnMapReadyCallback
     {
         private MapFragment _mapFragment;
-        private GoogleMap _map;
-        private Marker _userLocation;
+        public GoogleMap _map;
+        public Marker _userLocation;
+
+        public double _userLat { get; set; }
+        public double _userLng { get; set; }
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.NetworkView);
-
+            
             _mapFragment = FragmentManager.FindFragmentByTag("map") as MapFragment;
             if (_mapFragment == null)
             {
@@ -50,12 +54,10 @@ namespace Carrot.Droid.Views
 
             var options = new MarkerOptions();
             options.SetPosition(new LatLng(ViewModel.UserLocation.Lat, ViewModel.UserLocation.Lng));
-            options.SetTitle("My location");
+            options.SetTitle("Me");
             _userLocation = _map.AddMarker(options);
 
-            var set = this.CreateBindingSet<NetworkView, MapViewModel>();
-            set.Bind(_userLocation).For(m => m.Position).To(vm => vm.UserLocation).WithConversion(new LocationToLatLngValueConverter(), null);
-            set.Apply();
+            IUserLocationService locationService = new UserLocationService(this, ViewModel);
         }
     }
 }
