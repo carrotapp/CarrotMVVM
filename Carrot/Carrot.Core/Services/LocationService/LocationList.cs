@@ -13,22 +13,54 @@ namespace Carrot.Core.Services.LocationService
         public string name { get; set; }
         public string colour { get; set; }
 
-        private void ReadJsonFile()
+
+        public List<LocationList> GetMock()
         {
-            using (StreamReader r = new StreamReader("JSON/MockLocations.json"))
+
+            var response = new PlaceResponse
             {
-                string values = r.ReadToEnd();
-                Console.WriteLine("VALUES: "+values);
-                List<LocationList> places = JsonConvert.DeserializeObject<List<LocationList>>(values);
-                Console.WriteLine("PLACES"+places);
+                Places = new List<LocationList>()
+            };
+
+            List<LocationList> places = new List<LocationList>();
+            var assembly = typeof(App).Assembly;
+            string[] streams = assembly.GetManifestResourceNames();
+
+            foreach (string file in streams)
+            {
+                Console.WriteLine("FILE " + file);
+                if (file.EndsWith("MockLocations.json"))
+                {
+                    Stream stream = assembly.GetManifestResourceStream(file);
+                    using (StreamReader streamReader = new StreamReader(stream))
+                    {
+                        response = (PlaceResponse)JsonConvert.DeserializeObject(streamReader.ReadToEnd(), typeof(PlaceResponse));
+                    }
+                    break;
+                }
             }
-            
-           
-                //dynamic array = JsonConvert.DeserializeObject(json);
+            places = response.Places;
+            Console.WriteLine(response.Places.Count);
+            return places;
         }
-    
+        //private void ReadJsonFile()
+        //{
+        //    using (StreamReader reader = new StreamReader("JSON/MockLocations.json"))
+        //    {
+        //        string values = reader.ReadToEnd();
+        //        Console.WriteLine("VALUES: " + values);
+        //        List<LocationList> places = JsonConvert.DeserializeObject<List<LocationList>>(values);
+        //        // var json = JsonConvert.DeserializeObject<Places<LocationList>>(StreamReader.ReadToEnd());
+        //        Console.WriteLine("PLACES" + places);
+        //        return;
+        //    }
+        //    //dynamic array = JsonConvert.DeserializeObject(json);
+        //}
+    }
 
-
+    internal class PlaceResponse
+    {
+        public List<LocationList> Places { get; set; }
     }
 }
 
