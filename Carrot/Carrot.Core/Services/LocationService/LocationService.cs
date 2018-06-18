@@ -8,6 +8,11 @@ using MvvmCross.Plugin.Messenger;
 using Carrot.Core.Helpers;
 using MongoDB.Bson;
 using System.Threading.Tasks;
+using System.IO;
+using Newtonsoft.Json;
+using System.Collections.Generic;
+using Carrot.Core.Models.Responses;
+using Newtonsoft.Json.Linq;
 
 namespace Carrot.Core.Services.LocationService
 {
@@ -50,6 +55,34 @@ namespace Carrot.Core.Services.LocationService
             await database.GetCollection<BsonDocument>("test").InsertOneAsync(doc);
             var count = await database.GetCollection<BsonDocument>("test").CountAsync(new BsonDocument());
             Debug.Print("Count: " + count);
+        }
+
+        public List<Place> GetMock()
+        {
+            var response = new PlaceResponse
+            {
+                Places = new List<Place>()
+            };
+
+            List<Place> places = new List<Place>();
+            var assembly = typeof(App).Assembly;
+            string[] streams = assembly.GetManifestResourceNames();
+
+            foreach (string file in streams)
+            {
+                if (file.EndsWith("MockLocations.json"))
+                {
+                    Stream stream = assembly.GetManifestResourceStream(file);
+                    using (StreamReader streamReader = new StreamReader(stream))
+                    {
+                        response = (PlaceResponse)JsonConvert.DeserializeObject(streamReader.ReadToEnd(), typeof(PlaceResponse));
+                    }
+                    break;
+                }
+            }
+            places = response.Places;
+
+            return places;
         }
     }
 }

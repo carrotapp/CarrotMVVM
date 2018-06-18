@@ -11,6 +11,11 @@ using Android.Graphics;
 using Android.Content.Res;
 using Android.Content;
 using TextDrawable;
+using Clans.Fab;
+using System;
+using System.Collections.Generic;
+using Carrot.Core.Models.DTO;
+using MvvmCross.UI;
 
 namespace Carrot.Droid.Views
 {
@@ -21,6 +26,8 @@ namespace Carrot.Droid.Views
         private GoogleMap _map;
         private TextDrawable.TextDrawable icon;
         private Marker _userLocation;
+        private List<Location> _locations;
+        private List<Place> _places;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -33,7 +40,7 @@ namespace Carrot.Droid.Views
             {
                 GoogleMapOptions mapOptions = new GoogleMapOptions()
                     .InvokeMapType(GoogleMap.MapTypeNormal)
-                    .InvokeZoomControlsEnabled(true)
+                    .InvokeZoomControlsEnabled(false)
                     .InvokeCompassEnabled(true);
 
                 FragmentTransaction fragTx = FragmentManager.BeginTransaction();
@@ -43,28 +50,45 @@ namespace Carrot.Droid.Views
             }
             _mapFragment.GetMapAsync(this);
 
-            //var testButton = FindViewById<FloatingActionButton>(Resource.Id.filterMenuItem);
-            //testButton.Click += async (s, e) =>
-            //{
-            //    await ViewModel.TestDB();
-            //};
+            var testButton = FindViewById<FloatingActionButton>(Resource.Id.checkInFab);
+
+            testButton.Click += (s, e) =>
+           {
+               try
+               {
+                   Test();
+               }
+               catch (System.Exception er)
+               {
+                   System.Console.WriteLine(er.Message); ;
+               }
+           };
         }
 
         public void OnMapReady(GoogleMap googleMap)
         {
             _map = googleMap;
-
-            //BitmapDescriptor bd = IconDrawableToBitmap("AB", 100, Color.Orange);
+            Test();
 
             var options = new MarkerOptions();
-            options.SetPosition(new LatLng(0, 0));
+            options.SetPosition(new LatLng(ViewModel.UserLocation.Lat, ViewModel.UserLocation.Lng));
             options.SetTitle("My location");
             options.SetIcon(BitmapDescriptorFactory.FromResource(Resource.Drawable.my_location));
             _userLocation = _map.AddMarker(options);
 
-            //var set = this.CreateBindingSet<NetworkView, MapViewModel>();
-            //set.Bind(_userLocation).For(m => m.Position).To(vm => vm.UserLocation).WithConversion(new LocationToLatLngValueConverter(), null);
-            //set.Apply();
+            var placeMarker = new MarkerOptions();
+
+            for (int i = 0; i < _places.Count; i++)
+            {
+                placeMarker.SetPosition(new LatLng(_locations[i].Lat, _locations[i].Lng));
+                placeMarker.SetTitle(_places[i].Name);
+                placeMarker.SetIcon(IconDrawableToBitmap(_places[i].Name.Substring(0, 1), 100, Color.ParseColor(_places[i].Colour)));
+                _map.AddMarker(placeMarker);
+            }
+
+            var set = this.CreateBindingSet<NetworkView, MapViewModel>();
+            set.Bind(_userLocation).For(m => m.Position).To(vm => vm.UserLocation).WithConversion(new LocationToLatLngValueConverter(), null);
+            set.Apply();
         }
 
         private BitmapDescriptor IconDrawableToBitmap(string label, int size, Color color)
@@ -87,6 +111,17 @@ namespace Carrot.Droid.Views
             icon.Draw(canvas);
             BitmapDescriptor bd = BitmapDescriptorFactory.FromBitmap(bitmap);
             return bd;
+        }
+
+        private void Test()
+        {
+            _places = ViewModel.DisplayMock();
+            _locations = new List<Location>();
+            Console.WriteLine(_places[0].Name);
+            foreach (var item in _places)
+            {
+                _locations.Add(new Location(item.Coords));
+            }
         }
     }
 }

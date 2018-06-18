@@ -5,6 +5,7 @@ using Carrot.Core.Services.LocationService;
 using System.Diagnostics;
 using Carrot.Core.Helpers;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Carrot.Core.ViewModels
 {
@@ -14,19 +15,25 @@ namespace Carrot.Core.ViewModels
         private readonly ILocationService _locationService;
 
         private double _lng;
-        public double Lng {
+
+        public double Lng
+        {
             get => _lng;
             set => SetProperty(ref _lng, value);
         }
 
         private double _lat;
-        public double Lat {
+
+        public double Lat
+        {
             get => _lat;
             set => SetProperty(ref _lat, value);
         }
 
         private Location _userLocation;
-        public Location UserLocation {
+
+        public Location UserLocation
+        {
             get => _userLocation;
             set => SetProperty(ref _userLocation, value);
         }
@@ -49,6 +56,11 @@ namespace Carrot.Core.ViewModels
         {
             Debug.Print("Starting Mongo thing!!!");
             await _locationService.PushUserLocationToDB(UserLocation);
+        }
+
+        public List<Place> DisplayMock()
+        {
+            return _locationService.GetMock();
         }
     }
 }
