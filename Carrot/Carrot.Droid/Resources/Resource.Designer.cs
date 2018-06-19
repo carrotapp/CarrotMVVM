@@ -957,9 +957,6 @@ namespace Carrot.Droid
 			// aapt resource value: 0x7f04000f
 			public const int notification_template_part_time = 2130968591;
 			
-			// aapt resource value: 0x7f040010
-			public const int SplashScreen = 2130968592;
-			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

@@ -57,6 +57,10 @@ namespace Carrot.Droid.Views
             options.SetTitle("Me");
             _userLocation = _map.AddMarker(options);
 
+            var set = this.CreateBindingSet<NetworkView, MapViewModel>();
+            set.Bind(_userLocation).For(m => m.Position).To(vm => vm.UserLocation).WithConversion(new LocationToLatLngValueConverter(), null);
+            set.Apply();
+
             IUserLocationService locationService = new UserLocationService(this, ViewModel);
         }
     }

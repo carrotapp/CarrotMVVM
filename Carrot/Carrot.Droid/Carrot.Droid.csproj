@@ -152,10 +152,8 @@
     <Compile Include="Services\IUserLocationService.cs" />
     <Compile Include="Services\UserLocationCallback.cs" />
     <Compile Include="Services\UserLocationService.cs" />
-    <Compile Include="Views\LoadingScreenView.cs" />
     <Compile Include="Views\NetworkView.cs" />
     <Compile Include="ValueConverters\LocationToLatLngValueConverter.cs" />
-    <Compile Include="Views\SplashScreenActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -198,11 +196,6 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\colors.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\SplashScreen.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\food.png" />
